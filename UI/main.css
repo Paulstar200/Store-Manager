@@ -366,9 +366,9 @@ PAGE: CREATE SALE ATTENDANT
 /*****************
 PAGE: CREATE HTML
 ****************/
-table {
+/* table {
     width: 100%;
-}
+} */
 
 table, th, td {
     border: 1px solid black;
@@ -420,6 +420,46 @@ table#t1 th {
 
 .final > a:hover {
     color: #2f1b56;
+}
+
+
+/*****************
+PAGE: VIEW RECORDS
+****************/
+
+.viewbtn {
+    background-color: #3232ff;
+    color: #fff;
+}
+
+#recordsales {
+    font-family: 'Firi Sans', sans-serif;
+    text-align: center;
+    
+}
+
+#adminview {
+    margin-left: 450px;
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+
+#recordsales > h1 {
+    margin-top: 20px;
+    font-size: 30px;
+}
+
+table#adminview tr:nth-child(even) {
+    background-color: #eee;
+}
+
+table#adminview tr:nth-child(odd) {
+    background-color: #fff;
+}
+
+table#adminview th {
+    color: white;
+    background-color: #2f1b56;
 }
 
 /*****************
