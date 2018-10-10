@@ -364,6 +364,65 @@ PAGE: CREATE SALE ATTENDANT
 }
 
 /*****************
+PAGE: CREATE HTML
+****************/
+table {
+    width: 100%;
+}
+
+table, th, td {
+    border: 1px solid black;
+    border-collapse: collapse;
+    
+}
+
+th, td {
+    padding: 15px;
+}
+
+#records {
+    width: 960px;
+    text-align: center;
+    margin-left: 150px;
+    font-family: 'Fira sans', sans-serif;
+}
+
+#capt {
+    font-family: 'Open sans', sans-serif;
+    font-weight: bold;
+    font-size: 2em;
+    color: #909090;
+    padding-bottom: 20px;
+}
+
+table#t1 tr:nth-child(even) {
+    background-color: #eee;
+}
+
+table#t1 tr:nth-child(odd) {
+    background-color: #fff;
+}
+
+table#t1 th {
+    color: white;
+    background-color: #2f1b56;
+}
+
+.final {
+    padding-top: 20px;
+    padding-bottom: 30px;
+    
+}
+
+.final > a {
+    color: #909090;
+}
+
+.final > a:hover {
+    color: #2f1b56;
+}
+
+/*****************
 RESPONSIVE
 ****************/
 
