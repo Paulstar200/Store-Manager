@@ -22,7 +22,7 @@ header > a {
 	
 }
 
-a:hover {
+.order a:hover {
 
 	color: #b2b2ff;
 
@@ -92,7 +92,7 @@ ul {
     padding: 10px 10px 10px 40px;
 }
 
-li a {
+.order > a {
     font-family: 'Fira Sans', sans-serif;
     color: #fff;
 }
@@ -165,7 +165,7 @@ footer {
     font-family: 'Fira Sans', sans-serif;
     color: #505050;
     padding-top: 15px;
-    
+    z-index: 3;
 }
 
 #main {
@@ -263,6 +263,65 @@ PAGE: STORE OWNER
     font-family: 'Fira Sans', sans-serif;
 }
 
+/****************
+PAGE: VIEW PRODUCTS
+*****************/
+.sidenav {
+    height: 900px;
+    width: 200px;
+    
+    left: 0;
+    z-index: 1;
+    background-color: #e8e8e8;
+    overflow-x: hidden;
+    padding-top: 20px;
+    box-shadow: -2px 2px 25px 2px #000;
+}
+
+.sidenav a {
+    padding: 10px 8px 6px 16px;
+    text-decoration: none;
+    font-size: 25px;
+    font-family: 'Fira Sans', sans-serif;
+    color: #000;
+    display: block;
+
+}
+
+/* When you mouse over the navigation links, change their color */
+.sidenav a:hover {
+    color: grey;
+    
+}
+
+
+
+.sidenav h2{
+    font-family: 'Changa One', cursive;
+    font-size: 1.6em;
+    color: #000;
+    padding-left: 10px;
+    padding-bottom: 10px;
+}
+
+#mystuff {
+    
+    margin: 0 250px;
+}
+
+#gallery-items li {
+     float: left; 
+    width: 40%;
+    margin: 1% 1% 5% 1%;
+}
+
+#gallery-items p {
+    margin-top: -20px;
+}
+/*****************
+RESPONSIVE
+****************/
+
 @media only screen and (max-width: 640px) {
     header {
 
@@ -358,4 +417,22 @@ PAGE: STORE OWNER
         margin-top: 10px;
         
     }
+
+    /********************
+    VIEW PRODUCTS
+    *********************/
+
+    .gallery li {
+        width: 45%;
+        float: left;
+    }
+    
+}
+
+
+
+
+@media screen and (max-height: 450px) {
+    .sidenav {padding-top: 15px;}
+    .sidenav a {font-size: 18px;}
 }
