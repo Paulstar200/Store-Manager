@@ -318,6 +318,51 @@ PAGE: VIEW PRODUCTS
 #gallery-items p {
     margin-top: -20px;
 }
+
+
+/*****************
+PAGE: CREATE SALE ATTENDANT
+****************/
+
+#create {
+    text-align: center;
+    margin: 50px auto 0 auto;
+    box-shadow: 1px 1px 10px 1px grey;
+    width: 300px;
+    height: 300px;
+    border-radius: 4%;
+    font-family: 'Fira sans', sans-serif;
+}
+
+#create > h1 {
+    padding-top: 50px;
+    padding-bottom: 10px;
+    font-family: 'Fira sans', sans-serif;
+}
+
+.newbtn {
+    margin-top: 10px;
+    background-color: black;
+    border-radius: 10%;
+    width: 100px;
+    height: 30px;
+    color: #fff;
+    font-family: 'Fira sans', sans-serif;
+    font-size: 20px;
+}
+
+.newbtn:hover {
+    background-color: #3232ff;
+}
+.back {
+    margin-top: 20px;
+    font-family: 'Fira sans', sans-serif;
+}
+
+#create a {
+    color: #3232ff;
+}
+
 /*****************
 RESPONSIVE
 ****************/
