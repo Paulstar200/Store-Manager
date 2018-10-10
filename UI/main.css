@@ -83,7 +83,7 @@ ul {
 
 }
 
-li {
+.unordered > li {
 
 	display: inline-block;
 	float: left;
@@ -172,6 +172,97 @@ footer {
     min-height: calc(100vh - 40px);
 }
 
+/**********************
+PAGE: STORE OWNER
+***********************/
+
+#description {
+    background-color: #d3d3d3;
+    text-align: right;
+    font-family: 'Fira Sans', sans-serif;
+}
+
+.subdescription {
+    padding: 5px 20px 5px 0 ;
+}
+
+.main-items {
+    max-width: 90%;
+    margin: 0 auto;
+    
+}
+.owner {
+    text-align: center;
+    margin-top: 30px;
+    padding-top: 20px;
+    border-radius: 2%;
+    float: left;
+    width: 33.33%;
+    height: 300px;
+}
+
+.owner:hover, .owner-prod:hover, .owner-sales:hover {
+    background: #dcdcdc;
+}
+
+.ownerdetails > .owneritem {
+    font-size: 20px;
+    margin-bottom: 10px;
+}
+
+.owner-prod {
+    text-align: center;
+    padding-top: 80px;
+    margin-top: 25px;
+    float: left;
+    width: 33.33%;
+    margin-bottom: -20px;
+    height: 230px;
+    border-radius: 2%;
+}
+
+.owner-sales {
+    text-align: center;
+    margin-top: 30px;
+    float: right;
+    width: 33.33%;
+    font-size: 30px;
+    height: 210px;
+    padding-top: 100px;
+    padding-bottom: -10px;
+    border-radius: 2%;
+}
+
+.saleslist > .owneritem {
+    margin-bottom: 20px;
+    
+}
+
+.prodlist > .owneritem {
+    margin-bottom: 30px;
+    font-size: 30px;
+    
+}
+
+.owneritem > a {
+    color: grey;
+}
+
+.owneritem > a:hover {
+    color: #4c4cff;
+}
+
+
+
+.displaypic {
+    border-radius: 100%;
+    width: 50%;
+}
+
+.owneritem {
+    font-family: 'Fira Sans', sans-serif;
+}
+
 @media only screen and (max-width: 640px) {
     header {
 
@@ -238,5 +329,33 @@ footer {
 
     li a {
         color: #7f7fff;
+    }
+
+
+    /***************
+    STORE OWNER
+    **************/
+
+    .owner {
+        text-align: center;
+        margin-top: 30px;
+        padding-top: 20px;
+        background: #dcdcdc;
+        border-bottom: 2px solid blue;
+        
+    }
+    
+    .owner-prod {
+        text-align: center;
+        border-bottom: 2px solid blue;
+        margin-top: 10px;
+        
+    }
+    
+    .owner-sales {
+        text-align: center;
+        border-bottom: 2px solid blue;
+        margin-top: 10px;
+        
     }
 }
