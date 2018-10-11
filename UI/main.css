@@ -1,5 +1,5 @@
 /*RESET*/
-/* html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, font, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td {margin:0; padding:0; border:0; outline:0; font-size:100%; vertical-align:baseline; background:transparent;} body {line-height: 1;}ol, ul{list-style:none;} blockquote, q{quotes:none;} blockquote:before, blockquote:after, q:before, q:after{content:'';content:none;} :focus{outline:0;} ins{text-decoration:none;} del{text-decoration:line-through;} table{border-collapse:collapse; border-spacing:0;} */
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, font, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td {margin:0; padding:0; border:0; outline:0; font-size:100%; vertical-align:baseline; background:transparent;} body {line-height: 1;}ol, ul{list-style:none;} blockquote, q{quotes:none;} blockquote:before, blockquote:after, q:before, q:after{content:'';content:none;} :focus{outline:0;} ins{text-decoration:none;} del{text-decoration:line-through;} table{border-collapse:collapse; border-spacing:0;}
 
 /*************************
 PAGE: INDEX.HTML
@@ -13,16 +13,18 @@ body {
     background-color: #e8e8e8;
 }
 
+#loginhead {
+    height: 100px;
+    background: hsl(260, 52%, 22%);
+}
 
 #maintopic {
-    background: hsl(260, 52%, 22%);
-    margin: -20px -8px 0 -10px;
-    padding: 20px 20px 20px 0;
+    padding: 30px 20px 20px 0;
     text-align: center;
     color: #fff;
     font-family: 'Changa One', cursive;
     overflow: hidden;
-    font-size: 2em;
+    font-size: 3em;
 }
 
 
@@ -39,6 +41,18 @@ body {
 
 .account {
     font-family: 'Poiret One', cursive;
+    font-size: 25px;
+    margin-bottom: 20px;
+    color: #000;
+}
+
+.inputfields {
+    margin-top: 30px;
+    color: #000;
+}
+
+.bottomfield {
+    margin-bottom: 30px;
 }
 
 .login {
@@ -59,7 +73,7 @@ input:focus {
 
 }
 
-.btn {
+#btn {
     font-size: 16px;
     color: #fff;
     line-height: 1.2;
@@ -69,6 +83,10 @@ input:focus {
     background-color: #000;
     border-radius: 27px;
     box-shadow: 1px 1px 3px 1px grey;
+    
+}
+.forgot{
+    margin-top: 20px;
 }
 
 .forgot > a {
@@ -77,7 +95,7 @@ input:focus {
 }
 
 .forgot > a:hover {
-    color: #19ff19;
+    color: #444;
 }
 
 @media screen and (min-width: 660px) {
