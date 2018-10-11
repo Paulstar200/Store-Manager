@@ -39,13 +39,13 @@ body {
 .login {
     font-family: 'Open Sans', sans-serif;
     font-size: 15px;
-
-
 }
 
 .input {
     height: 40px;
     width: 250px;
+    font-size: 20px;
+    font-family: 'Open Sans', sans-serif;
 
 }
 
@@ -59,13 +59,11 @@ input:focus {
     color: #fff;
     line-height: 1.2;
     font-family: 'Open Sans', sans-serif;
-    justify-content: center;
     align-items: center;
-    min-width: 120px;
-    height: 45px;
+    padding: 10px 30px 10px 30px;
     background-color: #000;
     border-radius: 27px;
-
+    box-shadow: 1px 1px 3px 1px grey;
 }
 
 .forgot > a {
