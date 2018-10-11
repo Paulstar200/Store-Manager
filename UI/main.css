@@ -318,6 +318,201 @@ PAGE: VIEW PRODUCTS
 #gallery-items p {
     margin-top: -20px;
 }
+
+
+/*****************
+PAGE: CREATE SALE ATTENDANT
+****************/
+
+#create {
+    text-align: center;
+    margin: 50px auto 0 auto;
+    box-shadow: 1px 1px 10px 1px grey;
+    width: 300px;
+    height: 300px;
+    border-radius: 4%;
+    font-family: 'Fira sans', sans-serif;
+}
+
+#create > h1 {
+    padding-top: 50px;
+    padding-bottom: 10px;
+    font-family: 'Fira sans', sans-serif;
+}
+
+.newbtn {
+    margin-top: 10px;
+    background-color: black;
+    border-radius: 10%;
+    width: 100px;
+    height: 30px;
+    color: #fff;
+    font-family: 'Fira sans', sans-serif;
+    font-size: 20px;
+}
+
+.newbtn:hover {
+    background-color: #3232ff;
+}
+.back {
+    margin-top: 20px;
+    font-family: 'Fira sans', sans-serif;
+}
+
+#create a {
+    color: #3232ff;
+}
+
+/*****************
+PAGE: CREATE HTML
+****************/
+/* table {
+    width: 100%;
+} */
+
+table, th, td {
+    border: 1px solid black;
+    border-collapse: collapse;
+    
+}
+
+th, td {
+    padding: 15px;
+}
+
+#records {
+    width: 960px;
+    text-align: center;
+    margin-left: 150px;
+    font-family: 'Fira sans', sans-serif;
+}
+
+#capt {
+    font-family: 'Open sans', sans-serif;
+    font-weight: bold;
+    font-size: 2em;
+    color: #909090;
+    padding-bottom: 20px;
+}
+
+table#t1 tr:nth-child(even) {
+    background-color: #eee;
+}
+
+table#t1 tr:nth-child(odd) {
+    background-color: #fff;
+}
+
+table#t1 th {
+    color: white;
+    background-color: #2f1b56;
+}
+
+.final {
+    padding-top: 20px;
+    padding-bottom: 30px;
+    
+}
+
+.final > a {
+    color: #909090;
+}
+
+.final > a:hover {
+    color: #2f1b56;
+}
+
+
+/*****************
+PAGE: VIEW RECORDS
+****************/
+
+.viewbtn {
+    background-color: #3232ff;
+    color: #fff;
+}
+
+#recordsales {
+    font-family: 'Firi Sans', sans-serif;
+    text-align: center;
+    
+}
+
+#adminview {
+    margin-left: 450px;
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+
+#recordsales > h1 {
+    margin-top: 20px;
+    font-size: 30px;
+}
+
+table#adminview tr:nth-child(even) {
+    background-color: #eee;
+}
+
+table#adminview tr:nth-child(odd) {
+    background-color: #fff;
+}
+
+table#adminview th {
+    color: white;
+    background-color: #2f1b56;
+}
+
+/*****************
+INDIVIDUAL PRODUCT PAGE
+****************/
+#categories {
+    margin-left: 20px;
+    margin-top: 20px;
+}
+#categories > p {
+    font-family: 'Fira-sans', sans-serif;
+}
+
+#selectbtn {
+    background-color:#3232ff;
+}
+
+.categorypg button {
+    color: #fff;
+    font-family: 'Fira sans', sans-serif;
+    width: 100px;
+    height: 30px;
+    background-color: #007f00;
+}
+#individual {
+    margin: 20px auto;
+    max-width: 100%;
+    height:1000px;
+}
+
+.individualprod {
+    background-color: #fff;;
+    margin-left: 50px;
+    height: 580px;
+    float: left;
+    width: 20%;
+    border-radius: 3%;
+    box-shadow: 1px 1px 10px 3px #d3d3d3;
+}
+
+.individualprod > img {
+    width: 100%;
+    border-radius: 2%;
+}
+
+.individualprod >p {
+    padding: 2px;
+    margin: 0 auto;
+    font-family: 'Fira sans', sans-serif;
+    border-bottom: 0.5px solid #d3d3d3;
+   width: 95%;
+}
+
 /*****************
 RESPONSIVE
 ****************/
