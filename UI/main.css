@@ -523,6 +523,31 @@ INDIVIDUAL PRODUCT PAGE
     margin-left: 50px;
 }
 
+/***********************
+PAGE: CART
+************************/
+
+#cart {
+   background-color: red;
+   max-width: 960px;
+   margin:10px auto;
+   font-family: 'Fira sans', sans-serif;
+   
+}
+
+table#shopcart tr:nth-child(even) {
+    background-color: #eee;
+}
+
+table#shopcart tr:nth-child(odd) {
+    background-color: #fff;
+}
+
+table#shopcart th {
+    color: white;
+    background-color: #2f1b56;
+}
+
 /*****************
 RESPONSIVE
 ****************/
