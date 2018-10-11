@@ -288,13 +288,8 @@ footer {
 }
 
 @media only screen and (max-width: 640px) {
-    header {
-
-        /* position: absolute; */
-
-    }
     
-
+    
     #menu-icon {
 
         display:inline-block;
@@ -347,7 +342,7 @@ footer {
 
     #records {
         
-        margin-left: -80px;
+        margin-left: -100px;
         margin-bottom: 20px;
     }
 
