@@ -510,7 +510,7 @@ INDIVIDUAL PRODUCT PAGE
     margin: 0 auto;
     font-family: 'Fira sans', sans-serif;
     border-bottom: 0.5px solid #d3d3d3;
-   width: 95%;
+    width: 95%;
 }
 
 .individualprod > button {
@@ -520,6 +520,7 @@ INDIVIDUAL PRODUCT PAGE
     width: 100px;
     height: 30px;
     margin-top: 10px;
+    margin-left: 50px;
 }
 
 /*****************
