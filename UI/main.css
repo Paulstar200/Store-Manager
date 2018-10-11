@@ -388,12 +388,6 @@ PAGE: STORE OWNER
 }
 
 @media only screen and (max-width: 640px) {
-    header {
-
-		/* position: absolute; */
-
-    }
-    
 
 	#menu-icon {
 
@@ -464,9 +458,14 @@ PAGE: STORE OWNER
         text-align: center;
         margin-top: 30px;
         padding-top: 20px;
-        background: #dcdcdc;
+        margin-left: 20px;
         border-bottom: 2px solid blue;
+        width: 90%;
         
+    }
+
+    .ownerdetails {
+        margin-left: -50px;
     }
     
     .owner-prod {
@@ -474,12 +473,20 @@ PAGE: STORE OWNER
         border-bottom: 2px solid blue;
         margin-top: 10px;
         
+        margin-left: 20px;
+        width: 90%;
     }
     
     .owner-sales {
         text-align: center;
         border-bottom: 2px solid blue;
-        margin-top: 10px;
         
+        margin-bottom: 20px;
+        margin-right: 13px;
+        width: 90%;
+    }
+
+    .saleslist > .owneritem {
+        line-height: 1;
     }
 }
