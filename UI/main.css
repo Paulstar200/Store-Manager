@@ -37,6 +37,7 @@ body {
     background-color: #f5f5f5;
     border-radius: 3%;
     box-shadow: -0.5px -1px 25px 0.7px #888888;
+    height: 350px;
 }
 
 .account {
@@ -73,18 +74,24 @@ input:focus {
 
 }
 
-#btn {
-    font-size: 16px;
-    color: #fff;
+.btn {
+    width: 80%;
     line-height: 1.2;
     font-family: 'Open Sans', sans-serif;
     align-items: center;
-    padding: 10px 30px 10px 30px;
+    padding: 10px 0 10px 0;
     background-color: #000;
     border-radius: 27px;
     box-shadow: 1px 1px 3px 1px grey;
-    
+    margin-left: 30px;
+    margin-bottom: 10px;
 }
+
+.btn > a {
+    color: #fff;
+    font-family: 'Open Sans', sans-serif;
+}
+
 .forgot{
     margin-top: 20px;
 }
@@ -103,7 +110,7 @@ input:focus {
         padding: 20px 40px 150px 40px;
         margin: 25px auto 0 auto;
         width: 25%;
-        height: 30%;
+        height: 220px;
     }
 }
 
