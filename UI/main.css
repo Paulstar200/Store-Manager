@@ -463,6 +463,57 @@ table#adminview th {
 }
 
 /*****************
+INDIVIDUAL PRODUCT PAGE
+****************/
+#categories {
+    margin-left: 20px;
+    margin-top: 20px;
+}
+#categories > p {
+    font-family: 'Fira-sans', sans-serif;
+}
+
+#selectbtn {
+    background-color:#3232ff;
+}
+
+.categorypg button {
+    color: #fff;
+    font-family: 'Fira sans', sans-serif;
+    width: 100px;
+    height: 30px;
+    background-color: #007f00;
+}
+#individual {
+    margin: 20px auto;
+    max-width: 100%;
+    height:1000px;
+}
+
+.individualprod {
+    background-color: #fff;;
+    margin-left: 50px;
+    height: 580px;
+    float: left;
+    width: 20%;
+    border-radius: 3%;
+    box-shadow: 1px 1px 10px 3px #d3d3d3;
+}
+
+.individualprod > img {
+    width: 100%;
+    border-radius: 2%;
+}
+
+.individualprod >p {
+    padding: 2px;
+    margin: 0 auto;
+    font-family: 'Fira sans', sans-serif;
+    border-bottom: 0.5px solid #d3d3d3;
+   width: 95%;
+}
+
+/*****************
 RESPONSIVE
 ****************/
 
