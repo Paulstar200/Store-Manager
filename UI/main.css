@@ -206,7 +206,6 @@ li {
 
     display: inline-block;
     float: left;
-    
     font-size: 30px;
     padding: 10px 10px 10px 40px;
 }
@@ -436,13 +435,7 @@ RESPONSIVE
 ****************/
 
 @media only screen and (max-width: 640px) {
-    header {
-
-		/* position: absolute; */
-
-    }
     
-
 	#menu-icon {
 
 		display:inline-block;
@@ -512,9 +505,14 @@ RESPONSIVE
         text-align: center;
         margin-top: 30px;
         padding-top: 20px;
-        background: #dcdcdc;
+        margin-left: 20px;
         border-bottom: 2px solid blue;
+        width: 90%;
         
+    }
+
+    .ownerdetails {
+        margin-left: -50px;
     }
     
     .owner-prod {
@@ -522,23 +520,25 @@ RESPONSIVE
         border-bottom: 2px solid blue;
         margin-top: 10px;
         
+        margin-left: 20px;
+        width: 90%;
     }
     
     .owner-sales {
         text-align: center;
         border-bottom: 2px solid blue;
-        margin-top: 10px;
         
+        margin-bottom: 20px;
+        margin-right: 13px;
+        width: 90%;
     }
 
-    /********************
-    VIEW PRODUCTS
-    *********************/
-
-    .gallery li {
-        width: 45%;
-        float: left;
+    .saleslist > .owneritem {
+        line-height: 1;
     }
+    /*****************
+    PAGE:ATTENDANT
+    ******************/
     
 }
 
