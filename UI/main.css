@@ -813,6 +813,11 @@ RESPONSIVE
     /*****************************
     INDIVIDUAL PRODUCT
     ******************************/
+    #searchbar > input{
+       margin-left: 70px;
+       width: 250px;
+    }
+
     #individual {
         width: 95%;
         margin: 20px auto;
