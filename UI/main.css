@@ -704,9 +704,15 @@ table#shopcart th {
 /*********************
 PAGE: EDIT PRODUCT
 *********************/
+.ownerheight {
+    height: 450px;
+}
 
+.prodheight {
+    height: 390px;
+}
 .ownerhead {
-    margin-bottom: 10px;
+    margin-bottom: 20px;
     font-family: 'Fira sans', sans-serif;
     font-size: 1.5em;
 }
@@ -715,9 +721,76 @@ PAGE: EDIT PRODUCT
     font-family: 'Fira sans', sans-serif;
 }
 
+.createproduct > input {
+    height: 30px;
+    width: 250px;
+    margin-bottom: 20px;
+}
+
 .createbtn {
     font-family: 'Fira sans', sans-serif;
     margin-top: 10px;
+    background-color: #2f1b56;
+    color: #fff;
+    padding: 10px;
+}
+
+.modifyhead {
+    font-family: 'Fira sans', sans-serif;
+    font-size: 1.5em;
+    margin-top: -50px;
+}
+
+.modifyprod {
+    width: 200px;
+    height: 30px;
+    margin-top: 20px;
+    font-size: 1.3em;
+    font-family: 'Fira sans', sans-serif;
+}
+
+.modifybtn {
+    background: #2f1b56;
+    color: #fff;
+    padding: 10px;
+    margin-top: 10px;
+    font-family: 'Fira sans', sans-serif;
+    font-size: 20px;
+}
+
+.deletehead {
+    font-family: 'Fira sans', sans-serif;
+    margin-top: -70px;
+}
+
+.deleteprod {
+    font-family: 'Fira sans', sans-serif;
+    font-size: 20px;
+    margin-top: 20px;
+    height: 30px;
+}
+
+.deleteheight {
+    height: 380px;
+    margin-bottom: 20px;
+}
+
+.goback{
+    margin-top: 30px;
+    background-color: #2f1b56;
+    width: 10%;
+    text-align: center;
+    margin-left: 600px;
+    font-family: 'Fira sans', sans-serif;
+    height: 40px;
+    padding-top:10px;
+    box-shadow: 2px 1px 8px 1px grey;
+   
+}
+
+.gobacktext > a {
+    color: #fff;
+    font-size: 1.3em;
 }
 
 /*****************
@@ -868,5 +941,31 @@ RESPONSIVE
     .conshop {
         margin-left: -100px;
         
+    }
+
+        /*********************
+    PAGE: EDIT PRODUCT
+    *********************/
+  
+
+    .modifybtn {
+        background: #2f1b56;
+        color: #fff;
+        padding: 10px;
+        margin-top: 10px;
+        font-family: 'Fira sans', sans-serif;
+        font-size: 20px;
+    }
+
+    
+
+    .goback{
+        width: 40%;
+        margin-left: 120px;
+    }
+
+    .gobacktext > a {
+        
+        font-size: 1.3em;
     }
 }
