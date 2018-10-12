@@ -74,18 +74,10 @@ input:focus {
 
 }
 
-.btn {
-    font-size: 16px;
-    color: #fff;
-    line-height: 1.2;
-    font-family: 'Open Sans', sans-serif;
-    align-items: center;
-    padding: 10px 30px 10px 30px;
-    background-color: #000;
-    border-radius: 27px;
-    box-shadow: 1px 1px 3px 1px grey;
 
+   
 
+.btn{
     width: 80%;
     line-height: 1.2;
     font-family: 'Open Sans', sans-serif;
@@ -104,19 +96,16 @@ input:focus {
 
     font-family: 'Open Sans', sans-serif;
 
+
 }
 
 .forgot{
     margin-top: 20px;
-
-
 }
 
 .btn > a {
     color: #fff;
     font-family: 'Open Sans', sans-serif;
-
-
 }
 
 .forgot > a {
@@ -136,7 +125,6 @@ input:focus {
         height: 220px;
     }
 }
-
 
 
 
@@ -228,8 +216,10 @@ ul {
 
 li {
 
+
     display: inline-block;
     float: left;
+
 
     font-size: 30px;
     padding: 10px 10px 10px 40px;
@@ -275,13 +265,7 @@ BODY
     padding-bottom:5px;
 }
 
-.wrap-items {
-    font-family: 'Fira sans', sans-serif;
-    color: #000;
-    font-size: 1.5em;
-    line-height: 1.5;
-    
-}
+
 
 #records > .wrap-items {
     margin-left: 150px;
@@ -292,6 +276,10 @@ BODY
     display: inline-block;
     padding-bottom: 5px;
     padding-top: 5px;
+    font-family: 'Fira sans', sans-serif;
+    color: #000;
+    font-size: 1.5em;
+    line-height: 1.5;
     
 }
 
@@ -457,14 +445,70 @@ PAGE: CREATE SALE ATTENDANT
 }
 
 /*****************
+PAGE: CREATE HTML
+****************/
+table {
+    width: 100%;
+}
+
+
+table, th, td {
+    border: 1px solid black;
+    border-collapse: collapse;
+    
+}
+
+th, td {
+    padding: 15px;
+}
+
+#records2 {
+    width: 960px;
+    text-align: center;
+    margin-left: 150px;
+    font-family: 'Fira sans', sans-serif;
+}
+
+#capt {
+    font-family: 'Open sans', sans-serif;
+    font-weight: bold;
+    font-size: 2em;
+    color: #000;
+    padding-bottom: 20px;
+    margin-top: 15px;
+}
+
+table#t1 tr:nth-child(even) {
+    background-color: #eee;
+}
+
+table#t1 tr:nth-child(odd) {
+    background-color: #fff;
+}
+
+table#t1 th {
+    color: white;
+    background-color: #2f1b56;
+}
+
+.final {
+    padding-top: 20px;
+    padding-bottom: 30px;
+    
+}
+
+.final > a {
+    color: #909090;
+}
+
+.final > a:hover {
+    color: #2f1b56;
+}
+
+/*****************
 RESPONSIVE
 ****************/
 
-@media only screen and (max-width: 640px) {
-    
-	#menu-icon {
-
-		display:inline-block;
 
 
 @media only screen and (max-width: 640px) {
@@ -473,7 +517,6 @@ RESPONSIVE
     #menu-icon {
 
         display:inline-block;
-
 
     }
     
@@ -575,12 +618,5 @@ RESPONSIVE
     PAGE:ATTENDANT
     ******************/
     
-}
-
-
-
-
-@media screen and (max-height: 450px) {
-    .sidenav {padding-top: 15px;}
-    .sidenav a {font-size: 18px;}
+    
 }
