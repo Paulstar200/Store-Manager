@@ -75,7 +75,6 @@ input:focus {
 }
 
 
-   
 
 .btn{
     width: 80%;
@@ -93,6 +92,7 @@ input:focus {
 .btn > a {
     color: #fff;
 
+
     font-family: 'Open Sans', sans-serif;
 
 
@@ -103,11 +103,6 @@ input:focus {
     margin-top: 20px;
 }
 
-
-.btn > a {
-    color: #fff;
-    font-family: 'Open Sans', sans-serif;
-}
 
 
 .forgot > a {
@@ -217,6 +212,10 @@ ul {
 
 li {
 
+    display: inline-block;
+    float: left;
+
+
 
     display: inline-block;
     float: left;
@@ -281,11 +280,11 @@ BODY
     display: inline-block;
     padding-bottom: 5px;
     padding-top: 5px;
-
     font-family: 'Fira sans', sans-serif;
     color: #000;
     font-size: 1.5em;
     line-height: 1.5;
+
 
 }
 
@@ -567,16 +566,74 @@ table#adminview th {
 }
 
 /*****************
+INDIVIDUAL PRODUCT PAGE
+****************/
+#categories {
+    margin-left: 20px;
+    margin-top: 20px;
+}
+#categories > p {
+    font-family: 'Fira-sans', sans-serif;
+}
+
+
+#selectbtn {
+    background-color:#3232ff;
+}
+
+.categorypg button {
+    color: #fff;
+    font-family: 'Fira sans', sans-serif;
+    width: 100px;
+    height: 30px;
+    background-color: #007f00;
+}
+#individual {
+    margin-left: 80px;
+    margin-top: 20px;
+    max-width: 100%;
+    
+}
+
+.individualprod {
+    background-color: #fff;;
+    margin-left: 50px;
+    margin-bottom: 25px;
+    height: 650px;
+    float: left;
+    width: 20%;
+    border-radius: 3%;
+    box-shadow: 1px 1px 10px 3px #d3d3d3;
+}
+
+.individualprod > img {
+    width: 100%;
+    border-radius: 2%;
+    
+}
+
+.individualprod >p {
+    padding: 2px;
+    margin: 0 auto;
+    font-family: 'Fira sans', sans-serif;
+    border-bottom: 0.5px solid #d3d3d3;
+    font-size: 21px;
+   width: 95%;
+   line-height: 1.2;
+}
+
+.prodbtn {
+    margin-top: 10px;
+    background-color: #2f1b56;
+    color: #fff;
+    font-family: 'Fira sans', sans-serif;
+    width: 100px;
+    height: 40px;
+}
+/*****************
 RESPONSIVE
 ****************/
 
-@media only screen and (max-width: 640px) {
-    /* #attendanthead {
-        width: 300%;
-    } */
-	#menu-icon {
-
-		display:inline-block;
 
 
 
@@ -683,10 +740,29 @@ RESPONSIVE
     .saleslist > .owneritem {
         line-height: 1;
     }
+
+    /*****************************
+    INDIVIDUAL PRODUCT
+    ******************************/
+    #individual {
+        width: 95%;
+        margin: 20px auto;
+    }
+
+    .individualprod {
+        width: 70%;
+        margin-right: 20px;
+    }
+
+    .categorypg > button {
+        width: 20%;
+    }
+
     /*****************
     PAGE:ATTENDANT
     ******************/
     
     
+
     
 }
