@@ -2,29 +2,30 @@
 <html>
     <head>
         <meta charset="utf-8">
-        <title>Store owner</title>
+        <title>View records</title>
         <meta name="viewport" content="width=device-width; initial-scale=1; maximum-scale=1">
         <link rel="stylesheet" href="main.css">
         <link href="https://fonts.googleapis.com/css?family=Changa+One|Fira+Sans:400,700|Open+Sans:400,700" rel="stylesheet">
     </head>
     <body>
         <div id="main">
-        <header>
-            <a href="#" id="logo">
-                <p class="title">STORE</p>
-               <p class="title">MANAGER</p>
-            </a>
-            <nav>
-                <a href="#" id="menu-icon"></a>
-            <ul class="unordered">
-                <li class="order"><a href="#" class="current">Profile</a></li>
-                <li class="order"><a href="#">Attendants</a></li>
-                <li class="order"><a href="#">Products</a></li>
-                <li class="order"><a href="#">Cart</a></li>
-                <li class="order"><a href="#">Logout</a></li>
-            </ul>
-            </nav>
-        </header>
+            <header id="attendanthead">
+                <a href="#" id="logo">
+                    <p class="title">STORE</p>
+                    <p class="title">MANAGER</p>
+                </a>
+                <nav id="attendantnav">
+                    <a href="#" id="menu-icon"></a>
+                <ul class="unordered">
+                    <li><a href="#" class="current">Profile</a></li>
+                    <li><a href="#">Attendants</a></li>
+                    <li><a href="#">Products</a></li>
+                    <li><a href="#">Cart</a></li>
+                    <li><a href="index.html">Logout</a></li>
+                </ul>
+                </nav>
+                
+            </header>
         <div id="recordsales">
         <h1>VIEW SALES RECORDS</h1>
         <table id="adminview">
@@ -61,6 +62,8 @@
                 <td><button class="viewbtn">View</button></td>
             </tr>
         </table>
+
+        <p class="parentrecord"><a class="profrecords"href="owner.html">Return to profile</a></p>
         </div>
         </div>
         <footer>

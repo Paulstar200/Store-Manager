@@ -9,27 +9,30 @@
     </head>
     <body>
         <div id="main">
-        <header>
-            <a href="#" id="logo">
-                <p class="title">STORE</p>
-                <p class="title">MANAGER</p>
-            </a>
-            <nav>
-                <a href="#" id="menu-icon"></a>
-            <ul class="unordered">
-                <li class="order"><a href="#" class="current">Profile</a></li>
-                <li class="order"><a href="#">Attendants</a></li>
-                <li class="order"><a href="#">Products</a></li>
-                <li class="order"><a href="#">Cart</a></li>
-                <li class="order"><a href="#">Logout</a></li>
-            </ul>
-            </nav>
-            
-        </header>
+            <header id="attendanthead">
+                <a href="#" id="logo">
+                    <p class="title">STORE</p>
+                    <p class="title">MANAGER</p>
+                </a>
+                <nav id="attendantnav">
+                    <a href="#" id="menu-icon"></a>
+                <ul class="unordered">
+                    <li><a href="owner.html" >Profile</a></li>
+                    <li><a href="attendant.html">Attendants</a></li>
+                    <li><a href="individual.html" class="current">Products</a></li>
+                    <li><a href="cart.html">Cart</a></li>
+                    <li><a href="index.html">Logout</a></li>
+                </ul>
+                </nav>
+                
+            </header>
         <div id="description">
             <p class="subdescription">Logged in as: Store Owner</p>
-        </div> 
+        </div>
 
+        <div id="searchbar">
+            <input type="text" placeholder="Search for a product">
+        </div>
         <div id="categories">
             <p class="categorypg">Category: 
                 <button id="selectbtn">Gaming</button>
@@ -42,47 +45,75 @@
             <ul>
                 <li class="individualprod">
                     <img  src="img/ps4.jpg">
-                    <p>Product name: Playstation 4</p>
+                    <p>Product : Playstation 4</p>
                     <p>Category ID:1</p>
-                    <p>Category name: Gaming</p>
+                    <p>Category : Gaming</p>
                     <p>Price: Ksh 40000</p>
-                    <p>Product Description: Charcoal black</p>
+                    <p>Description: Black</p>
                     <p>Total number sold: 200</p>
-                    <p>Number in inventory: 150</p>
-                    <p>Minimum number allowed in inventory: 50</p>
+                    <p>Number in inventory: 200</p>
+                    <p>Minimum number allowed in inventory: 30</p>
+                    <button class="prodbtn">Add to cart</button>
                 </li>
                 <li class="individualprod">
-                    <img  src="img/ps4.jpg">
-                    <p>Product name: Playstation 4</p>
-                    <p>Category ID:1</p>
-                    <p>Category name: Gaming</p>
-                    <p>Price: Ksh 40000</p>
-                    <p>Product Description: Charcoal black</p>
-                    <p>Total number sold: 200</p>
-                    <p>Number in inventory: 150</p>
-                    <p>Minimum number allowed in inventory: 50</p>
+                    <img  src="img/gold.jpg">
+                    <p>Product : XBox One</p>
+                    <p>Category ID:2</p>
+                    <p>Category : Gaming</p>
+                    <p>Price: Ksh 50000</p>
+                    <p>Description: Gold</p>
+                    <p>Total number sold: 10</p>
+                    <p>Number in inventory: 50</p>
+                    <p>Minimum number allowed in inventory: 5</p>
+                    <button class="prodbtn">Add to cart</button>
                 </li>
                 <li class="individualprod">
-                    <img  src="img/ps4.jpg">
-                    <p>Product name: Playstation 4</p>
-                    <p>Category ID:1</p>
-                    <p>Category name: Gaming</p>
-                    <p>Price: Ksh 40000</p>
-                    <p>Product Description: Charcoal black</p>
-                    <p>Total number sold: 200</p>
+                    <img  src="img/switch.jpg">
+                    <p>Product: Playstation 4</p>
+                    <p>Category ID:3</p>
+                    <p>Category: Gaming</p>
+                    <p>Price: Ksh 2000</p>
+                    <p>Product Description: Cloud white</p>
+                    <p>Total number sold: 50</p>
                     <p>Number in inventory: 150</p>
                     <p>Minimum number allowed in inventory: 50</p>
+                    <button class="prodbtn">Add to cart</button>
                 </li>
                 <li class="individualprod">
-                    <img  src="img/ps4.jpg">
-                    <p>Product name: Playstation 4</p>
-                    <p>Category ID:1</p>
+                    <img  src="img/vita.jpg">
+                    <p>Product: Playstation Vita</p>
+                    <p>Category ID:4</p>
                     <p>Category name: Gaming</p>
-                    <p>Price: Ksh 40000</p>
-                    <p>Product Description: Charcoal black</p>
-                    <p>Total number sold: 200</p>
-                    <p>Number in inventory: 150</p>
-                    <p>Minimum number allowed in inventory: 50</p>
+                    <p>Price: Ksh 35000</p>
+                    <p>Product Description: Piano black</p>
+                    <p>Total number sold: 30</p>
+                    <p>Number in inventory: 100</p>
+                    <p>Minimum number allowed in inventory: 10</p>
+                    <button class="prodbtn">Add to cart</button>
+                </li>
+                <li class="individualprod">
+                    <img  src="img/xbox1.jpg">
+                    <p>Product: Xbox one s</p>
+                    <p>Category ID:5</p>
+                    <p>Category name: Gaming</p>
+                    <p>Price: Ksh 35000</p>
+                    <p>Product Description: WHite</p>
+                    <p>Total number sold: 20</p>
+                    <p>Number in inventory: 90</p>
+                    <p>Minimum number allowed in inventory: 10</p>
+                    <button class="prodbtn">Add to cart</button>
+                </li>
+                <li class="individualprod">
+                    <img  src="img/progold.jpg">
+                    <p>Product : PS 4 Pro</p>
+                    <p>Category ID:6</p>
+                    <p>Category : Gaming</p>
+                    <p>Price: Ksh 80000</p>
+                    <p>Description: Gold</p>
+                    <p>Total number sold: 10</p>
+                    <p>Number in inventory: 30</p>
+                    <p>Minimum number allowed in inventory: 5</p>
+                    <button class="prodbtn">Add to cart</button>
                 </li>
             </ul>
         </div>

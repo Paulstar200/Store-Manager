@@ -2,32 +2,33 @@
 <html>
     <head>
             <meta charset="utf-8">
-            <title>Store owner</title>
+            <title>Create user</title>
             <meta name="viewport" content="width=device-width; initial-scale=1; maximum-scale=1">
             <link rel="stylesheet" href="main.css">
             <link href="https://fonts.googleapis.com/css?family=Changa+One|Fira+Sans" rel="stylesheet">
     </head>
     <body>
         <div id="main">
-        <header>
+            <header id="attendanthead">
                 <a href="#" id="logo">
                     <p class="title">STORE</p>
                     <p class="title">MANAGER</p>
                 </a>
-                <nav>
+                <nav id="attendantnav">
                     <a href="#" id="menu-icon"></a>
                 <ul class="unordered">
-                    <li class="order"><a href="#" class="current">Profile</a></li>
-                    <li class="order"><a href="#">Attendants</a></li>
-                    <li class="order"><a href="#">Products</a></li>
-                    <li class="order"><a href="#">Cart</a></li>
-                    <li class="order"><a href="#">Logout</a></li>
+                    <li><a href="owner.html" class="current">Profile</a></li>
+                    <li><a href="attendant.html">Attendants</a></li>
+                    <li><a href="individual.html">Products</a></li>
+                    <li><a href="cart.html">Cart</a></li>
+                    <li><a href="index.html">Logout</a></li>
                 </ul>
                 </nav>
                 
             </header>
-            
-
+            <div id="description">
+                <p class="subdescription">Logged in as: Store Owner</p>
+            </div> 
             <div id="create">
                 <h1>Create new sales attendant</h1>
                 <form action="" method="POST">
