@@ -84,15 +84,33 @@ input:focus {
     background-color: #000;
     border-radius: 27px;
     box-shadow: 1px 1px 3px 1px grey;
+    width: 80%;
+    line-height: 1.2;
+    font-family: 'Open Sans', sans-serif;
+    align-items: center;
+    padding: 10px 0 10px 0;
+    background-color: #000;
+    border-radius: 27px;
+    box-shadow: 1px 1px 3px 1px grey;
+    margin-left: 30px;
     margin-bottom: 10px;
 }
 
 .btn > a {
     color: #fff;
+    font-family: 'Open Sans', sans-serif;
 }
 
 .forgot{
     margin-top: 20px;
+
+}
+
+.btn > a {
+    color: #fff;
+    font-family: 'Open Sans', sans-serif;
+
+
 }
 
 .forgot > a {
@@ -387,24 +405,26 @@ PAGE: STORE OWNER
     font-family: 'Fira Sans', sans-serif;
 }
 
+
 @media only screen and (max-width: 640px) {
+    
+    
+    #menu-icon {
 
-	#menu-icon {
-
-		display:inline-block;
+        display:inline-block;
 
     }
     
     nav ul, nav:active ul { 
 
-		display: none;
-		position: absolute;
-		padding: 20px;
-		background: #fff;
-		border: 2px solid #444;
-		right: 20px;
-		top: 60px;
-		width: 50%;
+        display: none;
+        position: absolute;
+        padding: 20px;
+        background: #fff;
+        border: 2px solid #444;
+        right: 20px;
+        top: 60px;
+        width: 50%;
         border-radius: 3%;
         box-shadow: -1.5px -1px 10px 1px #444;
 
@@ -412,16 +432,16 @@ PAGE: STORE OWNER
     
     nav li {
 
-		text-align: center;
-		width: 100%;
-		padding: 10px 0;
-		margin: 0;
+        text-align: center;
+        width: 100%;
+        padding: 10px 0;
+        margin: 0;
         
-	}
+    }
 
-	nav:hover ul {
+    nav:hover ul {
 
-		display: block;
+        display: block;
 
     }
     
@@ -441,7 +461,7 @@ PAGE: STORE OWNER
 
     #records {
         
-        margin-left: -80px;
+        margin-left: -100px;
         margin-bottom: 20px;
     }
 
