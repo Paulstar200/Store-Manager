@@ -74,26 +74,36 @@ input:focus {
 
 }
 
-.btn {
-    font-size: 16px;
-    color: #fff;
+
+
+.btn{
+    width: 80%;
     line-height: 1.2;
     font-family: 'Open Sans', sans-serif;
     align-items: center;
-    padding: 10px 30px 10px 30px;
+    padding: 10px 0 10px 0;
     background-color: #000;
     border-radius: 27px;
     box-shadow: 1px 1px 3px 1px grey;
+    margin-left: 30px;
     margin-bottom: 10px;
 }
 
 .btn > a {
     color: #fff;
+
+
+    font-family: 'Open Sans', sans-serif;
+
+
+
 }
 
 .forgot{
     margin-top: 20px;
 }
+
+
 
 .forgot > a {
     font-family: 'Open Sans', sans-serif;
@@ -204,6 +214,17 @@ li {
 
     display: inline-block;
     float: left;
+
+
+
+    display: inline-block;
+    float: left;
+
+    display: inline-block;
+    float: left;
+
+
+
     font-size: 30px;
     padding: 10px 10px 10px 40px;
 }
@@ -248,13 +269,7 @@ BODY
     padding-bottom:5px;
 }
 
-.wrap-items {
-    font-family: 'Fira sans', sans-serif;
-    color: #000;
-    font-size: 1.5em;
-    line-height: 1.5;
-    
-}
+
 
 #records > .wrap-items {
     margin-left: 150px;
@@ -265,7 +280,12 @@ BODY
     display: inline-block;
     padding-bottom: 5px;
     padding-top: 5px;
-    
+    font-family: 'Fira sans', sans-serif;
+    color: #000;
+    font-size: 1.5em;
+    line-height: 1.5;
+
+
 }
 
 .wrap-items > a {
@@ -435,6 +455,7 @@ table {
     width: 100%;
 }
 
+
 table, th, td {
     border: 1px solid black;
     border-collapse: collapse;
@@ -493,6 +514,7 @@ table#t1 th {
 /*****************
 PAGE: VIEW RECORDS
 ****************/
+
 
 .viewbtn {
     background-color: #3232ff;
@@ -554,6 +576,7 @@ INDIVIDUAL PRODUCT PAGE
     font-family: 'Fira-sans', sans-serif;
 }
 
+
 #selectbtn {
     background-color:#3232ff;
 }
@@ -611,26 +634,28 @@ INDIVIDUAL PRODUCT PAGE
 RESPONSIVE
 ****************/
 
-@media only screen and (max-width: 640px) {
-    /* #attendanthead {
-        width: 300%;
-    } */
-	#menu-icon {
 
-		display:inline-block;
+
+
+@media only screen and (max-width: 640px) {
+    
+    
+    #menu-icon {
+
+        display:inline-block;
 
     }
     
     nav ul, nav:active ul { 
 
-		display: none;
-		position: absolute;
-		padding: 20px;
-		background: #fff;
-		border: 2px solid #444;
-		right: 20px;
-		top: 60px;
-		width: 50%;
+        display: none;
+        position: absolute;
+        padding: 20px;
+        background: #fff;
+        border: 2px solid #444;
+        right: 20px;
+        top: 60px;
+        width: 50%;
         border-radius: 3%;
         box-shadow: -1.5px -1px 10px 1px #444;
 
@@ -638,16 +663,16 @@ RESPONSIVE
     
     nav li {
 
-		text-align: center;
-		width: 100%;
-		padding: 10px 0;
-		margin: 0;
+        text-align: center;
+        width: 100%;
+        padding: 10px 0;
+        margin: 0;
         
-	}
+    }
 
-	nav:hover ul {
+    nav:hover ul {
 
-		display: block;
+        display: block;
 
     }
     
@@ -667,7 +692,7 @@ RESPONSIVE
 
     #records {
         
-        margin-left: -80px;
+        margin-left: -100px;
         margin-bottom: 20px;
     }
 
@@ -732,5 +757,12 @@ RESPONSIVE
     .categorypg > button {
         width: 20%;
     }
+
+    /*****************
+    PAGE:ATTENDANT
+    ******************/
+    
+    
+
     
 }
