@@ -1,0 +1,92 @@
+/*****************************
+PAGE: LOGIN
+******************************/
+a {
+    text-decoration: none;
+}
+
+body {
+    background-color: #e8e8e8;
+}
+
+#maintopic {
+    background: hsl(260, 52%, 22%);
+    margin: -20px -8px 0 -10px;
+    padding: 20px 20px 20px 0;
+    text-align: center;
+    color: #fff;
+    font-family: 'Changa One', cursive;
+    overflow: hidden;
+    font-size: 2em;
+}
+
+
+#admin {
+    text-align: center;
+    width: 80%;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    margin: 20px auto;
+    background-color: #f5f5f5;
+    border-radius: 3%;
+    box-shadow: -0.5px -1px 25px 0.7px #888888;
+    height: 350px;
+}
+
+.account {
+    font-family: 'Poiret One', cursive;
+}
+
+.login {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 15px;
+}
+
+.input {
+    height: 40px;
+    width: 250px;
+    font-size: 20px;
+    font-family: 'Open Sans', sans-serif;
+
+}
+
+input:focus {
+   outline: none;
+
+}
+
+.btn {
+    width: 80%;
+    line-height: 1.2;
+    font-family: 'Open Sans', sans-serif;
+    align-items: center;
+    padding: 10px 0 10px 0;
+    background-color: #000;
+    border-radius: 27px;
+    box-shadow: 1px 1px 3px 1px grey;
+    margin-left: 30px;
+}
+
+.btn > a {
+    color: #fff;
+    font-family: 'Open Sans', sans-serif;
+}
+
+.forgot > a {
+    font-family: 'Open Sans', sans-serif;
+    color: #000;
+}
+
+.forgot > a:hover {
+    color: #19ff19;
+}
+
+@media screen and (min-width: 660px) {
+    #admin {
+        padding: 20px 40px 150px 40px;
+        margin: 25px auto 0 auto;
+        width: 25%;
+        height: 220px;
+    }
+}
+
