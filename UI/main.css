@@ -84,6 +84,8 @@ input:focus {
     background-color: #000;
     border-radius: 27px;
     box-shadow: 1px 1px 3px 1px grey;
+
+
     width: 80%;
     line-height: 1.2;
     font-family: 'Open Sans', sans-serif;
@@ -93,16 +95,20 @@ input:focus {
     border-radius: 27px;
     box-shadow: 1px 1px 3px 1px grey;
     margin-left: 30px;
+
     margin-bottom: 10px;
 }
 
 .btn > a {
     color: #fff;
+
     font-family: 'Open Sans', sans-serif;
+
 }
 
 .forgot{
     margin-top: 20px;
+
 
 }
 
@@ -224,7 +230,7 @@ li {
 
     display: inline-block;
     float: left;
-    
+
     font-size: 30px;
     padding: 10px 10px 10px 40px;
 }
@@ -406,12 +412,68 @@ PAGE: STORE OWNER
 }
 
 
+
+/*****************
+PAGE: CREATE SALE ATTENDANT
+****************/
+
+#create {
+    text-align: center;
+    margin: 50px auto 0 auto;
+    box-shadow: 1px 1px 10px 1px grey;
+    width: 300px;
+    height: 300px;
+    border-radius: 4%;
+    font-family: 'Fira sans', sans-serif;
+}
+
+#create > h1 {
+    padding-top: 50px;
+    padding-bottom: 10px;
+    font-family: 'Fira sans', sans-serif;
+}
+
+.newbtn {
+    margin-top: 10px;
+    background-color: black;
+    border-radius: 10%;
+    width: 100px;
+    height: 30px;
+    color: #fff;
+    font-family: 'Fira sans', sans-serif;
+    font-size: 20px;
+}
+
+.newbtn:hover {
+    background-color: #3232ff;
+}
+.back {
+    margin-top: 20px;
+    font-family: 'Fira sans', sans-serif;
+}
+
+#create a {
+    color: #3232ff;
+}
+
+/*****************
+RESPONSIVE
+****************/
+
+@media only screen and (max-width: 640px) {
+    
+	#menu-icon {
+
+		display:inline-block;
+
+
 @media only screen and (max-width: 640px) {
     
     
     #menu-icon {
 
         display:inline-block;
+
 
     }
     
@@ -509,4 +571,16 @@ PAGE: STORE OWNER
     .saleslist > .owneritem {
         line-height: 1;
     }
+    /*****************
+    PAGE:ATTENDANT
+    ******************/
+    
+}
+
+
+
+
+@media screen and (max-height: 450px) {
+    .sidenav {padding-top: 15px;}
+    .sidenav a {font-size: 18px;}
 }
