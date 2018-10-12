@@ -1,43 +1,160 @@
 /*RESET*/
 html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, font, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td {margin:0; padding:0; border:0; outline:0; font-size:100%; vertical-align:baseline; background:transparent;} body {line-height: 1;}ol, ul{list-style:none;} blockquote, q{quotes:none;} blockquote:before, blockquote:after, q:before, q:after{content:'';content:none;} :focus{outline:0;} ins{text-decoration:none;} del{text-decoration:line-through;} table{border-collapse:collapse; border-spacing:0;}
 
+/*************************
+PAGE: INDEX.HTML
+*************************/
+
+a {
+    text-decoration: none;
+}
+
+body {
+    background-color: #e8e8e8;
+}
+
+#loginhead {
+    height: 100px;
+    background: hsl(260, 52%, 22%);
+}
+
+#maintopic {
+    padding: 30px 20px 20px 0;
+    text-align: center;
+    color: #fff;
+    font-family: 'Changa One', cursive;
+    overflow: hidden;
+    font-size: 3em;
+}
+
+
+#admin {
+    text-align: center;
+    width: 80%;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    margin: 20px auto;
+    background-color: #f5f5f5;
+    border-radius: 3%;
+    box-shadow: -0.5px -1px 25px 0.7px #888888;
+    height: 350px;
+}
+
+.account {
+    font-family: 'Poiret One', cursive;
+    font-size: 25px;
+    margin-bottom: 20px;
+    color: #000;
+}
+
+.inputfields {
+    margin-top: 30px;
+    color: #000;
+}
+
+.bottomfield {
+    margin-bottom: 30px;
+}
+
+.login {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 15px;
+}
+
+.input {
+    height: 40px;
+    width: 250px;
+    font-size: 20px;
+    font-family: 'Open Sans', sans-serif;
+
+}
+
+input:focus {
+   outline: none;
+
+}
+
+.btn {
+    font-size: 16px;
+    color: #fff;
+    line-height: 1.2;
+    font-family: 'Open Sans', sans-serif;
+    align-items: center;
+    padding: 10px 30px 10px 30px;
+    background-color: #000;
+    border-radius: 27px;
+    box-shadow: 1px 1px 3px 1px grey;
+    margin-bottom: 10px;
+}
+
+.btn > a {
+    color: #fff;
+}
+
+.forgot{
+    margin-top: 20px;
+}
+
+.forgot > a {
+    font-family: 'Open Sans', sans-serif;
+    color: #000;
+}
+
+.forgot > a:hover {
+    color: #444;
+}
+
+@media screen and (min-width: 660px) {
+    #admin {
+        padding: 20px 40px 150px 40px;
+        margin: 25px auto 0 auto;
+        width: 25%;
+        height: 220px;
+    }
+}
+
+
+
+/************************
+PAGE: ATTENDANT.HTML
+*************************/
 
 a {
     text-decoration: none;
 }
 
 body { 
-	font-size: 1.05em;
-	line-height: 1.25em;
-	
-	background: #f9f9f9;
-	color: #555;
+    font-size: 1.05em;
+    line-height: 1.25em;
+    
+    background: #f9f9f9;
+    color: #555;
 }
 
 header > a {
 
-	color: #fff;
+    color: #fff;
     text-decoration: none;
     font-family: 'Fira Sans', sans-serif;
-	
+    
 }
 
-.order a:hover {
+a:hover {
 
-	color: #b2b2ff;
+    color: #b2b2ff;
 
 }
 
-header {
+#attendanthead {
 
-	background: #2f1b56;
-	width: 100%;
-	height: 100px;
+    background: #2f1b56;
+    width: 100%;
+    height: 100px;
     /* position: fixed; */
     
-	top: 0;
-	left: 0;
-	/*border-bottom: 4px solid #4C9CF1;*/
+    top: 0;
+    left: 0;
+    /*border-bottom: 4px solid #4C9CF1;*/
     /* z-index: 100; */
     
 
@@ -45,9 +162,9 @@ header {
 
 #logo{
 
-	margin: 20px;
-	float: left;
-	width: 200px;
+    margin: 20px;
+    float: left;
+    width: 200px;
     height: 40px;
     font-size: 2em;
     display: block;
@@ -55,53 +172,53 @@ header {
     
 }
 
-nav {
+#attendantnav {
 
-	float: right;
-	padding: 20px;	
+    float: right;
+    padding: 20px;  
 
 }
 
 #menu-icon {
 
-	display: hidden;
-	width: 40px;
-	height: 40px;
-	background: #fff url(../img/menu.png) center;
+    display: hidden;
+    width: 40px;
+    height: 40px;
+    background: #fff url(../img/menu.png) center;
 }
 
 a:hover#menu-icon {
 
-	background-color: #444;
-	border-radius: 4px 4px 0 0;
+    background-color: #444;
+    border-radius: 4px 4px 0 0;
 
 }
 
 ul {
 
-	list-style: none;
+    list-style: none;
 
 }
 
-.unordered > li {
+li {
 
-	display: inline-block;
-	float: left;
-    
+    display: inline-block;
+    float: left;
     font-size: 30px;
     padding: 10px 10px 10px 40px;
 }
 
-.order > a {
+li a {
     font-family: 'Fira Sans', sans-serif;
     color: #fff;
 }
 
 .current {
 
-	color: #b2b2ff;
+    color: #b2b2ff;
 
 }
+
 
 /*****
 BODY
@@ -126,6 +243,7 @@ BODY
     
 }
 
+
 .title {
     padding-bottom:5px;
 }
@@ -139,7 +257,7 @@ BODY
 }
 
 #records > .wrap-items {
-    margin-left: 165px;
+    margin-left: 150px;
 }
 
 .wrap-items {
@@ -147,6 +265,7 @@ BODY
     display: inline-block;
     padding-bottom: 5px;
     padding-top: 5px;
+    
 }
 
 .wrap-items > a {
@@ -165,7 +284,7 @@ footer {
     font-family: 'Fira Sans', sans-serif;
     color: #505050;
     padding-top: 15px;
-    z-index: 3;
+    
 }
 
 #main {
@@ -203,11 +322,13 @@ PAGE: STORE OWNER
 
 .owner:hover, .owner-prod:hover, .owner-sales:hover {
     background: #dcdcdc;
+    box-shadow: 1px 1px 15px 2px grey;
 }
 
 .ownerdetails > .owneritem {
     font-size: 20px;
     margin-bottom: 10px;
+    margin-left: 80px;
 }
 
 .owner-prod {
@@ -263,62 +384,6 @@ PAGE: STORE OWNER
     font-family: 'Fira Sans', sans-serif;
 }
 
-/****************
-PAGE: VIEW PRODUCTS
-*****************/
-.sidenav {
-    height: 900px;
-    width: 200px;
-    
-    left: 0;
-    z-index: 1;
-    background-color: #e8e8e8;
-    overflow-x: hidden;
-    padding-top: 20px;
-    box-shadow: -2px 2px 25px 2px #000;
-}
-
-.sidenav a {
-    padding: 10px 8px 6px 16px;
-    text-decoration: none;
-    font-size: 25px;
-    font-family: 'Fira Sans', sans-serif;
-    color: #000;
-    display: block;
-
-}
-
-/* When you mouse over the navigation links, change their color */
-.sidenav a:hover {
-    color: grey;
-    
-}
-
-
-
-.sidenav h2{
-    font-family: 'Changa One', cursive;
-    font-size: 1.6em;
-    color: #000;
-    padding-left: 10px;
-    padding-bottom: 10px;
-}
-
-#mystuff {
-    
-    margin: 0 250px;
-}
-
-#gallery-items li {
-     float: left; 
-    width: 40%;
-    margin: 1% 1% 5% 1%;
-}
-
-#gallery-items p {
-    margin-top: -20px;
-}
-
 
 /*****************
 PAGE: CREATE SALE ATTENDANT
@@ -366,9 +431,9 @@ PAGE: CREATE SALE ATTENDANT
 /*****************
 PAGE: CREATE HTML
 ****************/
-/* table {
+table {
     width: 100%;
-} */
+}
 
 table, th, td {
     border: 1px solid black;
@@ -380,7 +445,7 @@ th, td {
     padding: 15px;
 }
 
-#records {
+#records2 {
     width: 960px;
     text-align: center;
     margin-left: 150px;
@@ -391,8 +456,9 @@ th, td {
     font-family: 'Open sans', sans-serif;
     font-weight: bold;
     font-size: 2em;
-    color: #909090;
+    color: #000;
     padding-bottom: 20px;
+    margin-top: 15px;
 }
 
 table#t1 tr:nth-child(even) {
@@ -423,6 +489,7 @@ table#t1 th {
 }
 
 
+
 /*****************
 PAGE: VIEW RECORDS
 ****************/
@@ -439,9 +506,11 @@ PAGE: VIEW RECORDS
 }
 
 #adminview {
-    margin-left: 450px;
+    max-width: 50%;
     margin-top: 30px;
     margin-bottom: 30px;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 #recordsales > h1 {
@@ -460,6 +529,18 @@ table#adminview tr:nth-child(odd) {
 table#adminview th {
     color: white;
     background-color: #2f1b56;
+}
+
+.parentrecord {
+    margin-bottom: 30px;
+}
+.profrecords {
+    background-color: #2f1b56;
+    padding: 15px;
+    font-family: 'Fira-sans', sans-serif;
+    font-size: 20px;
+    color: #fff;
+    box-shadow: 1px 1px 5px 2px grey;
 }
 
 /*****************
@@ -485,15 +566,17 @@ INDIVIDUAL PRODUCT PAGE
     background-color: #007f00;
 }
 #individual {
-    margin: 20px auto;
+    margin-left: 80px;
+    margin-top: 20px;
     max-width: 100%;
-    height:1000px;
+    
 }
 
 .individualprod {
     background-color: #fff;;
     margin-left: 50px;
-    height: 580px;
+    margin-bottom: 25px;
+    height: 650px;
     float: left;
     width: 20%;
     border-radius: 3%;
@@ -503,6 +586,7 @@ INDIVIDUAL PRODUCT PAGE
 .individualprod > img {
     width: 100%;
     border-radius: 2%;
+    
 }
 
 .individualprod >p {
@@ -510,31 +594,27 @@ INDIVIDUAL PRODUCT PAGE
     margin: 0 auto;
     font-family: 'Fira sans', sans-serif;
     border-bottom: 0.5px solid #d3d3d3;
-    width: 95%;
+    font-size: 21px;
+   width: 95%;
+   line-height: 1.2;
 }
 
-.individualprod > button {
-    background-color: #2f1b56;
-    font-family: 'Fira sans', sans-serif;
-    color: #fff;
-    width: 100px;
-    height: 30px;
+.prodbtn {
     margin-top: 10px;
-    margin-left: 50px;
+    background-color: #2f1b56;
+    color: #fff;
+    font-family: 'Fira sans', sans-serif;
+    width: 100px;
+    height: 40px;
 }
-
 /*****************
 RESPONSIVE
 ****************/
 
 @media only screen and (max-width: 640px) {
-    header {
-
-		/* position: absolute; */
-
-    }
-    
-
+    /* #attendanthead {
+        width: 300%;
+    } */
 	#menu-icon {
 
 		display:inline-block;
@@ -604,9 +684,14 @@ RESPONSIVE
         text-align: center;
         margin-top: 30px;
         padding-top: 20px;
-        background: #dcdcdc;
+        margin-left: 20px;
         border-bottom: 2px solid blue;
+        width: 90%;
         
+    }
+
+    .ownerdetails {
+        margin-left: -50px;
     }
     
     .owner-prod {
@@ -614,30 +699,38 @@ RESPONSIVE
         border-bottom: 2px solid blue;
         margin-top: 10px;
         
+        margin-left: 20px;
+        width: 90%;
     }
     
     .owner-sales {
         text-align: center;
         border-bottom: 2px solid blue;
-        margin-top: 10px;
         
+        margin-bottom: 20px;
+        margin-right: 13px;
+        width: 90%;
     }
 
-    /********************
-    VIEW PRODUCTS
-    *********************/
+    .saleslist > .owneritem {
+        line-height: 1;
+    }
 
-    .gallery li {
-        width: 45%;
-        float: left;
+    /*****************************
+    INDIVIDUAL PRODUCT
+    ******************************/
+    #individual {
+        width: 95%;
+        margin: 20px auto;
+    }
+
+    .individualprod {
+        width: 70%;
+        margin-right: 20px;
+    }
+
+    .categorypg > button {
+        width: 20%;
     }
     
-}
-
-
-
-
-@media screen and (max-height: 450px) {
-    .sidenav {padding-top: 15px;}
-    .sidenav a {font-size: 18px;}
 }
