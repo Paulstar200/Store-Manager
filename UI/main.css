@@ -701,6 +701,25 @@ table#shopcart th {
 }
 
 
+/*********************
+PAGE: EDIT PRODUCT
+*********************/
+
+.ownerhead {
+    margin-bottom: 10px;
+    font-family: 'Fira sans', sans-serif;
+    font-size: 1.5em;
+}
+
+.createproduct {
+    font-family: 'Fira sans', sans-serif;
+}
+
+.createbtn {
+    font-family: 'Fira sans', sans-serif;
+    margin-top: 10px;
+}
+
 /*****************
 RESPONSIVE
 ****************/
