@@ -87,7 +87,6 @@ input:focus {
     border-radius: 27px;
     box-shadow: 1px 1px 3px 1px grey;
     margin-left: 30px;
-
     margin-bottom: 10px;
 }
 
@@ -97,16 +96,19 @@ input:focus {
     font-family: 'Open Sans', sans-serif;
 
 
+
 }
 
 .forgot{
     margin-top: 20px;
 }
 
+
 .btn > a {
     color: #fff;
     font-family: 'Open Sans', sans-serif;
 }
+
 
 .forgot > a {
     font-family: 'Open Sans', sans-serif;
@@ -125,7 +127,6 @@ input:focus {
         height: 220px;
     }
 }
-
 
 
 
@@ -220,6 +221,10 @@ li {
     display: inline-block;
     float: left;
 
+    display: inline-block;
+    float: left;
+
+
 
     font-size: 30px;
     padding: 10px 10px 10px 40px;
@@ -276,11 +281,12 @@ BODY
     display: inline-block;
     padding-bottom: 5px;
     padding-top: 5px;
+
     font-family: 'Fira sans', sans-serif;
     color: #000;
     font-size: 1.5em;
     line-height: 1.5;
-    
+
 }
 
 .wrap-items > a {
@@ -400,7 +406,6 @@ PAGE: STORE OWNER
 }
 
 
-
 /*****************
 PAGE: CREATE SALE ATTENDANT
 ****************/
@@ -505,9 +510,73 @@ table#t1 th {
     color: #2f1b56;
 }
 
+
+
+/*****************
+PAGE: VIEW RECORDS
+****************/
+
+
+.viewbtn {
+    background-color: #3232ff;
+    color: #fff;
+}
+
+#recordsales {
+    font-family: 'Firi Sans', sans-serif;
+    text-align: center;
+    
+}
+
+#adminview {
+    max-width: 50%;
+    margin-top: 30px;
+    margin-bottom: 30px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#recordsales > h1 {
+    margin-top: 20px;
+    font-size: 30px;
+}
+
+table#adminview tr:nth-child(even) {
+    background-color: #eee;
+}
+
+table#adminview tr:nth-child(odd) {
+    background-color: #fff;
+}
+
+table#adminview th {
+    color: white;
+    background-color: #2f1b56;
+}
+
+.parentrecord {
+    margin-bottom: 30px;
+}
+.profrecords {
+    background-color: #2f1b56;
+    padding: 15px;
+    font-family: 'Fira-sans', sans-serif;
+    font-size: 20px;
+    color: #fff;
+    box-shadow: 1px 1px 5px 2px grey;
+}
+
 /*****************
 RESPONSIVE
 ****************/
+
+@media only screen and (max-width: 640px) {
+    /* #attendanthead {
+        width: 300%;
+    } */
+	#menu-icon {
+
+		display:inline-block;
 
 
 
@@ -617,6 +686,7 @@ RESPONSIVE
     /*****************
     PAGE:ATTENDANT
     ******************/
+    
     
     
 }
