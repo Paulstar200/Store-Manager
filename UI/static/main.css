@@ -576,9 +576,9 @@ INDIVIDUAL PRODUCT PAGE
 
 .individualprod {
     background-color: #fff;;
-    margin-left: 50px;
-    margin-bottom: 25px;
-    height: 650px;
+    margin-left: 70px;
+    margin-bottom: 30px;
+    height: 380px;
     float: left;
     width: 20%;
     border-radius: 3%;
@@ -596,7 +596,7 @@ INDIVIDUAL PRODUCT PAGE
     margin: 0 auto;
     font-family: 'Fira sans', sans-serif;
     border-bottom: 0.5px solid #d3d3d3;
-    font-size: 21px;
+    font-size: 20px;
    width: 95%;
    line-height: 1.2;
 }
@@ -932,13 +932,15 @@ RESPONSIVE
 
     #individual {
         width: 95%;
-        margin: 20px auto;
+        margin: 20px -12px;
+
     }
 
     .individualprod {
         width: 70%;
-        margin-right: 20px;
+        margin-right: -10px;
     }
+
 
     .categorypg > button {
         width: 20%;
