@@ -318,7 +318,7 @@ PAGE: STORE OWNER
     margin: 0 auto;
 
 }
-.owner {
+.ownerdiv {
     text-align: center;
     margin-top: 30px;
     padding-top: 20px;
@@ -328,7 +328,7 @@ PAGE: STORE OWNER
     height: 300px;
 }
 
-.owner:hover, .owner-prod:hover, .owner-sales:hover {
+.ownerdiv:hover, .owner-prod:hover, .owner-sales:hover {
     background: #dcdcdc;
     box-shadow: 1px 1px 15px 2px grey;
 }
@@ -348,6 +348,10 @@ PAGE: STORE OWNER
     margin-bottom: -20px;
     height: 230px;
     border-radius: 2%;
+}
+
+.ownerdelete {
+    margin-right: 80px;
 }
 
 .owner-sales {
@@ -370,7 +374,8 @@ PAGE: STORE OWNER
 .prodlist > .owneritem {
     margin-bottom: 30px;
     font-size: 30px;
-
+    line-height: 1.4;
+    text-align: center;
 }
 
 .owneritem > a {
@@ -507,11 +512,56 @@ PAGE: VIEW RECORDS
     color: #fff;
 }
 
+#recordsales > h1 {
+    margin-top: 50px;
+    color: #000;
+    font-size: 50px;
+
+}
+
+.filter {
+    margin-top: 50px;
+    margin-bottom: 20px;
+    font-size: 20px;
+    color: #000;
+}
+
+.filter > a {
+    text-decoration: none;
+    color: black;
+
+}
+
+
+.firstspan {
+    background-color: #b2b2ff;
+    padding: 5px 5px;
+    margin-left: 15px;
+    box-shadow: 0px 3px 10px #606060;
+}
+
+.secondspan {
+    background-color: #4c4cff;
+    padding: 5px 5px;
+    margin-left: 15px;
+    box-shadow: 0px 3px 10px #606060;
+}
+
+.thirdspan {
+    background-color: #9999ff;
+    padding: 5px 5px;
+    margin-left: 15px;
+    box-shadow: 0px 3px 10px #606060;
+}
+
+
+
 #recordsales {
-    font-family: 'Firi Sans', sans-serif;
+    font-family: 'Fira Sans', sans-serif;
     text-align: center;
 
 }
+
 
 #adminview {
     max-width: 50%;
@@ -521,10 +571,7 @@ PAGE: VIEW RECORDS
     margin-right: auto;
 }
 
-#recordsales > h1 {
-    margin-top: 20px;
-    font-size: 30px;
-}
+
 
 table#adminview tr:nth-child(even) {
     background-color: #eee;
@@ -540,8 +587,10 @@ table#adminview th {
 }
 
 .parentrecord {
-    margin-bottom: 30px;
+    margin-top: 50px;
+    margin-bottom: 40px;
 }
+
 .profrecords {
     background-color: #2f1b56;
     padding: 15px;
@@ -712,6 +761,13 @@ table#shopcart th {
 /*********************
 PAGE: EDIT PRODUCT
 *********************/
+
+.owner {
+    margin-right: 400px;
+    margin-left: 400px;
+    margin-bottom: 50px;
+}
+
 .ownerheight {
     height: 450px;
 }
@@ -719,14 +775,19 @@ PAGE: EDIT PRODUCT
 .prodheight {
     height: 390px;
 }
+
 .ownerhead {
     margin-bottom: 20px;
+
+    margin-top: 30px;
     font-family: 'Fira sans', sans-serif;
     font-size: 1.5em;
+    text-align: center;
 }
 
 .createproduct {
     font-family: 'Fira sans', sans-serif;
+    text-align: center;
 }
 
 .createproduct > input {
@@ -741,6 +802,7 @@ PAGE: EDIT PRODUCT
     background-color: #2f1b56;
     color: #fff;
     padding: 10px;
+    margin-left: 140px;
 }
 
 .modifyhead {
@@ -766,40 +828,26 @@ PAGE: EDIT PRODUCT
     font-size: 20px;
 }
 
-.deletehead {
-    font-family: 'Fira sans', sans-serif;
-    margin-top: -70px;
+.goback {
+    margin-left: 620px;
+
 }
 
-.deleteprod {
-    font-family: 'Fira sans', sans-serif;
-    font-size: 20px;
-    margin-top: 20px;
-    height: 30px;
-}
-
-.deleteheight {
-    height: 380px;
+.gobacktext {
+    font-family: "Fira sans", sans-serif;
     margin-bottom: 20px;
 }
 
-.goback{
-    margin-top: 30px;
-    background-color: #2f1b56;
-    width: 10%;
-    text-align: center;
-    margin-left: 600px;
-    font-family: 'Fira sans', sans-serif;
-    height: 40px;
-    padding-top:10px;
-    box-shadow: 2px 1px 8px 1px grey;
-
-}
-
 .gobacktext > a {
-    color: #fff;
-    font-size: 1.3em;
+    color: blue;
+    font-size: 1.5em;
 }
+
+.gobacktext > a:hover {
+    color: maroon;
+}
+
+
 
 /*****************
 RESPONSIVE
@@ -992,6 +1040,9 @@ RESPONSIVE
         margin-left: 120px;
     }
 
+    .gobacktext {
+        margin-left: 30px;
+    }
     .gobacktext > a {
 
         font-size: 1.3em;
