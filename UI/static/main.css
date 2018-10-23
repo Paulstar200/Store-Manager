@@ -397,6 +397,21 @@ PAGE: STORE OWNER
     font-family: 'Fira Sans', sans-serif;
 }
 
+/*****************
+PAGE: MODIFY.HTML
+****************/
+
+.modback {
+    margin-top: 20px;
+}
+
+.danger {
+    color: red;
+}
+
+.safeman {
+    color: blue;
+}
 
 /*****************
 PAGE: CREATE SALE ATTENDANT
