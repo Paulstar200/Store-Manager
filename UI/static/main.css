@@ -255,15 +255,21 @@ BODY
     color: #000;
     font-size: 1.5em;
     line-height: 1.5;
+    margin-bottom: 10px;
+    border-radius: 2%;
 
 }
 
 #records > .wrap-items {
-    margin-left: 150px;
+    margin-left: 170px;
+    margin-bottom: 25px;
+    background-color: #d3d3d3;
+    padding: 10px 30px;
+    box-shadow: 2px 1px 10px 2px #d3d3d3;
+    color: #3232ff;
 }
 
 .wrap-items {
-    border-bottom: 1.5px solid #b2b2ff;
     display: inline-block;
     padding-bottom: 5px;
     padding-top: 5px;
@@ -271,11 +277,11 @@ BODY
 }
 
 .wrap-items > a {
-    color: #000;
+    color: #3232ff;
 }
 
 .wrap-items > a:hover {
-    color: #3232ff;
+    color: #00007c;
 }
 
 footer {
