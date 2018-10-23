@@ -80,7 +80,7 @@ input:focus {
     line-height: 1.2;
     font-family: 'Open Sans', sans-serif;
     align-items: center;
-    padding: 10px 30px 10px 30px;
+    padding: 10px 20px 10px 30px;
     background-color: #000;
     border-radius: 27px;
     box-shadow: 1px 1px 3px 1px grey;
@@ -111,6 +111,8 @@ input:focus {
         width: 25%;
         height: 220px;
     }
+
+
 }
 
 
@@ -123,10 +125,10 @@ a {
     text-decoration: none;
 }
 
-body { 
+body {
     font-size: 1.05em;
     line-height: 1.25em;
-    
+
     background: #f9f9f9;
     color: #555;
 }
@@ -136,7 +138,7 @@ header > a {
     color: #fff;
     text-decoration: none;
     font-family: 'Fira Sans', sans-serif;
-    
+
 }
 
 a:hover {
@@ -151,12 +153,12 @@ a:hover {
     width: 100%;
     height: 100px;
     /* position: fixed; */
-    
+
     top: 0;
     left: 0;
     /*border-bottom: 4px solid #4C9CF1;*/
     /* z-index: 100; */
-    
+
 
 }
 
@@ -169,13 +171,13 @@ a:hover {
     font-size: 2em;
     display: block;
     font-family: 'Changa One', cursive;
-    
+
 }
 
 #attendantnav {
 
     float: right;
-    padding: 20px;  
+    padding: 20px;
 
 }
 
@@ -240,7 +242,7 @@ BODY
     float: left;
     margin-top: 50px;
     text-align: center;
-    
+
 }
 
 
@@ -253,7 +255,7 @@ BODY
     color: #000;
     font-size: 1.5em;
     line-height: 1.5;
-    
+
 }
 
 #records > .wrap-items {
@@ -265,7 +267,7 @@ BODY
     display: inline-block;
     padding-bottom: 5px;
     padding-top: 5px;
-    
+
 }
 
 .wrap-items > a {
@@ -284,7 +286,7 @@ footer {
     font-family: 'Fira Sans', sans-serif;
     color: #505050;
     padding-top: 15px;
-    
+
 }
 
 #main {
@@ -308,7 +310,7 @@ PAGE: STORE OWNER
 .main-items {
     max-width: 90%;
     margin: 0 auto;
-    
+
 }
 .owner {
     text-align: center;
@@ -356,13 +358,13 @@ PAGE: STORE OWNER
 
 .saleslist > .owneritem {
     margin-bottom: 20px;
-    
+
 }
 
 .prodlist > .owneritem {
     margin-bottom: 30px;
     font-size: 30px;
-    
+
 }
 
 .owneritem > a {
@@ -438,7 +440,7 @@ table {
 table, th, td {
     border: 1px solid black;
     border-collapse: collapse;
-    
+
 }
 
 th, td {
@@ -477,7 +479,7 @@ table#t1 th {
 .final {
     padding-top: 20px;
     padding-bottom: 30px;
-    
+
 }
 
 .final > a {
@@ -502,7 +504,7 @@ PAGE: VIEW RECORDS
 #recordsales {
     font-family: 'Firi Sans', sans-serif;
     text-align: center;
-    
+
 }
 
 #adminview {
@@ -569,7 +571,7 @@ INDIVIDUAL PRODUCT PAGE
     margin-left: 80px;
     margin-top: 20px;
     max-width: 100%;
-    
+
 }
 
 .individualprod {
@@ -586,7 +588,7 @@ INDIVIDUAL PRODUCT PAGE
 .individualprod > img {
     width: 100%;
     border-radius: 2%;
-    
+
 }
 
 .individualprod >p {
@@ -626,11 +628,11 @@ PAGE: CART
 ************************/
 
 #cart {
-   
+
    max-width: 960px;
    margin:10px auto;
    font-family: 'Fira sans', sans-serif;
-   
+
 }
 
 #cart > h1 {
@@ -785,7 +787,7 @@ PAGE: EDIT PRODUCT
     height: 40px;
     padding-top:10px;
     box-shadow: 2px 1px 8px 1px grey;
-   
+
 }
 
 .gobacktext > a {
@@ -801,13 +803,31 @@ RESPONSIVE
     /* #attendanthead {
         width: 300%;
     } */
+
+    .btn {
+        font-size: 16px;
+        line-height: 1.2;
+        margin-left: 30px;
+        margin-bottom: 15px;
+        align-items: center;
+        width: 60%;
+        border-radius: 27px;
+        box-shadow: 1px 1px 3px 1px grey;
+    }
+
+    #maintopic > h1 {
+        margin-left: 15px;
+        line-height: 0.5;
+        font-size: 50px;
+    }
+
 	#menu-icon {
 
 		display:inline-block;
 
     }
-    
-    nav ul, nav:active ul { 
+
+    nav ul, nav:active ul {
 
 		display: none;
 		position: absolute;
@@ -821,14 +841,14 @@ RESPONSIVE
         box-shadow: -1.5px -1px 10px 1px #444;
 
     }
-    
+
     nav li {
 
 		text-align: center;
 		width: 100%;
 		padding: 10px 0;
 		margin: 0;
-        
+
 	}
 
 	nav:hover ul {
@@ -836,10 +856,10 @@ RESPONSIVE
 		display: block;
 
     }
-    
+
     #wrapper {
         text-align: center;
-        
+
     }
 
     .wrap-items {
@@ -848,11 +868,11 @@ RESPONSIVE
         padding-bottom: 5px;
         padding-top: 5px;
         font-size: 20px;
-        
+
     }
 
     #records {
-        
+
         margin-left: -80px;
         margin-bottom: 20px;
     }
@@ -873,26 +893,26 @@ RESPONSIVE
         margin-left: 20px;
         border-bottom: 2px solid blue;
         width: 90%;
-        
+
     }
 
     .ownerdetails {
         margin-left: -50px;
     }
-    
+
     .owner-prod {
         text-align: center;
         border-bottom: 2px solid blue;
         margin-top: 10px;
-        
+
         margin-left: 20px;
         width: 90%;
     }
-    
+
     .owner-sales {
         text-align: center;
         border-bottom: 2px solid blue;
-        
+
         margin-bottom: 20px;
         margin-right: 13px;
         width: 90%;
@@ -923,7 +943,7 @@ RESPONSIVE
     .categorypg > button {
         width: 20%;
     }
-    
+
     /*******************
     CART
     *******************/
@@ -935,18 +955,18 @@ RESPONSIVE
 
     #smalledit > a {
         font-size: 15px;
-        
+
     }
 
     .conshop {
         margin-left: -100px;
-        
+
     }
 
         /*********************
     PAGE: EDIT PRODUCT
     *********************/
-  
+
 
     .modifybtn {
         background: #2f1b56;
@@ -957,7 +977,7 @@ RESPONSIVE
         font-size: 20px;
     }
 
-    
+
 
     .goback{
         width: 40%;
@@ -965,7 +985,7 @@ RESPONSIVE
     }
 
     .gobacktext > a {
-        
+
         font-size: 1.3em;
     }
 }
