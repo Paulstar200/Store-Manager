@@ -34,25 +34,25 @@
                     <form id="productform" method="POST">
                         <p class="createproduct">
                             <label>Product name</label><br>
-                            <input type="text">
+                            <input id="createname" type="text">
                         </p>
                         <p class="createproduct">
                             <label>Inventory</label><br>
-                            <input type="text">
+                            <input id="createinventory" type="text">
                         </p>
                         <p class="createproduct">
                             <label>Price</label><br>
-                            <input type="text">
+                            <input id="createprice" type="text">
                         </p>
                         <p class="createproduct">
                             <label>Minimum Stock</label><br>
-                            <input type="text">
+                            <input id="createstock" type="text">
                         </p>
                         <p class="createproduct">
                             <label>Category</label><br>
-                            <input type="text">
+                            <input id="createcategory" type="text">
                         </p>
-                        <button class="createbtn">Create!</button>
+                        <input class="createbtn" type="button" onclick="createProduct()" value="Create!">
                     </form>
                 </div>
             </div>
