@@ -885,8 +885,9 @@ RESPONSIVE
 
     #maintopic > h1 {
         margin-left: 15px;
-        line-height: 0.5;
+        line-height: 0.8;
         font-size: 50px;
+        margin-top: -25px;
     }
 
 	#menu-icon {
