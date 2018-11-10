@@ -182,16 +182,15 @@ a:hover {
 }
 
 #menu-icon {
-
     display: hidden;
     width: 40px;
     height: 40px;
-    background: #fff url(../img/menu.png) center;
+    background: #444 url(../static/img/menu2.png) center;
 }
 
 a:hover#menu-icon {
 
-    background-color: #444;
+    background-color: #fff;
     border-radius: 4px 4px 0 0;
 
 }
@@ -886,8 +885,9 @@ RESPONSIVE
 
     #maintopic > h1 {
         margin-left: 15px;
-        line-height: 0.5;
+        line-height: 0.8;
         font-size: 50px;
+        margin-top: -25px;
     }
 
 	#menu-icon {

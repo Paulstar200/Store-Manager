@@ -17,23 +17,24 @@
         </header>
         <div id="admin">
             <h2 class="account">ACCOUNT LOGIN</h2>
-            <form action="" method="POST">
+            <form id="loginform" action="" method="POST">
                 <p class="inputfields">
-                   <label class="login">USERNAME</label><br>
-                    <input class="input" type="text">
+                   <label class="login">EMAIL</label><br>
+                    <input id="email" class="input" type="text">
                 </p>
                 <p class="inputfields bottomfield">
                     <label class="login">PASSWORD</label><br>
-                    <input class="input" type="text">
+                    <input id="password" class="input" type="text">
                 </p>
-                <p class="btn"><a href="owner.html" >Store Owner Log in</a></p>
-                <p class="btn"><a href="attendant.html" >Store Attendant Log in</a></p>
+                <input class="btn" type="button" onclick="loginUser()" value="Log in">
+                <p class="forgot"><a href="#">Forgot password?</a></p>
             </form>
-            <p class="forgot"><a href="#">Forgot password?</a></p>
+           
         </div>
         </div>
         <footer>
             <p>&copy;2018 Store Manager </p>
         </footer>
+        <script src="static/js/login.js"></script>
     </body>
 </html>
