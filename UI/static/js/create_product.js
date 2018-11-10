@@ -1,4 +1,4 @@
-let createProductUrl = 'https://storemanagerapi2.herokuapp.com//api/v2/products';
+let createProductUrl = 'https://storemanagerapi2.herokuapp.com/api/v2/products';
 
 const product_form = document.getElementById('productform');
 
@@ -14,13 +14,13 @@ const createProduct = () => {
         category: document.getElementById('createcategory').value
       }),
       headers: {
+        'Authorization' : `Bearer ${localStorage.getItem("token")}`,
         'Content-type' : 'application/json'
       }
     })
     .then(response => response.json())
     .then(data => {
         if(data.message === "Product created successfully"){
-            
             window.location.href = "../UI/individual.html";
         } else{
             throw new Error(data.message);

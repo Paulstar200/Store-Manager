@@ -816,6 +816,9 @@ PAGE: EDIT PRODUCT
     height: 30px;
     width: 250px;
     margin-bottom: 20px;
+    font-size: 25px;
+    font-family: 'Fira sans', sans-serif;
+    color: #444;
 }
 
 .createbtn {
@@ -825,6 +828,7 @@ PAGE: EDIT PRODUCT
     color: #fff;
     padding: 10px;
     margin-left: 140px;
+    
 }
 
 .modifyhead {
@@ -852,7 +856,7 @@ PAGE: EDIT PRODUCT
 
 .goback {
     margin-left: 620px;
-
+    
 }
 
 .gobacktext {
