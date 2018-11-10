@@ -31,13 +31,13 @@
             <div class="main-items mainsqueeze">
                 <div class="owner ownerheight">
                     <h1 class='ownerhead'>Create product</h1>
-                    <form>
+                    <form id="productform" method="POST">
                         <p class="createproduct">
                             <label>Product name</label><br>
                             <input type="text">
                         </p>
                         <p class="createproduct">
-                            <label>Description</label><br>
+                            <label>Inventory</label><br>
                             <input type="text">
                         </p>
                         <p class="createproduct">
@@ -45,7 +45,11 @@
                             <input type="text">
                         </p>
                         <p class="createproduct">
-                            <label>Quantity</label><br>
+                            <label>Minimum Stock</label><br>
+                            <input type="text">
+                        </p>
+                        <p class="createproduct">
+                            <label>Category</label><br>
                             <input type="text">
                         </p>
                         <button class="createbtn">Create!</button>
@@ -59,5 +63,6 @@
         <footer>
             <p>&copy;2018 Store Manager </p>
         </footer>
+        <script src="static/js/create_product.js"></script>
     </body>
 </html>

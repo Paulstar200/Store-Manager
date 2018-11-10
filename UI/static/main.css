@@ -385,6 +385,14 @@ PAGE: STORE OWNER
     color: #4c4cff;
 }
 
+.owneritem2 > .firstedit {
+    margin-left: 50px;
+}
+
+.owneritem2 > .modifyedit {
+    margin-left: 45px;
+}
+
 
 
 .displaypic {
@@ -955,6 +963,11 @@ RESPONSIVE
     STORE OWNER
     **************/
 
+    .displaypic {
+        width: 170px;
+        margin-left: 75px;
+    }
+
     .owner {
         text-align: center;
         margin-top: 30px;
@@ -965,6 +978,26 @@ RESPONSIVE
 
     }
 
+    .ownerdiv:hover, .owner-prod:hover, .owner-sales:hover {
+        background: #dcdcdc;
+        box-shadow: 1px 1px 15px 2px grey;
+    }
+
+    .ownerdiv {
+        margin-bottom: 20px;
+        width: 90%;
+        margin-top: 30px;
+        margin-left: 20px;
+    }
+
+    .ownername {
+        margin-right: 40px;
+    }
+
+    .ownername > p{
+        line-height: 0.9;
+    }
+
     .ownerdetails {
         margin-left: -50px;
     }
@@ -973,15 +1006,30 @@ RESPONSIVE
         text-align: center;
         border-bottom: 2px solid blue;
         margin-top: 10px;
-
         margin-left: 20px;
         width: 90%;
+    }
+
+
+    .owneritem2 > .firstedit {
+        margin-left: -5px;
+    }
+    
+    .owneritem2 > .modifyedit {
+        margin-left: 5px;
+    }
+
+    .saleslist {
+        margin-top: -40px;
+    }
+
+    .saleslist p {
+        margin-right: 50px;
     }
 
     .owner-sales {
         text-align: center;
         border-bottom: 2px solid blue;
-
         margin-bottom: 20px;
         margin-right: 13px;
         width: 90%;
@@ -989,6 +1037,10 @@ RESPONSIVE
 
     .saleslist > .owneritem {
         line-height: 1;
+    }
+
+    .prodlist {
+        margin-top: -50px;
     }
 
     /*****************************
@@ -1048,7 +1100,13 @@ RESPONSIVE
         font-size: 20px;
     }
 
+    .createbtn {
+        margin-left: -10px;
+    }
 
+    .ownerheight {
+        height: 550px;
+    }
 
     .goback{
         width: 40%;
