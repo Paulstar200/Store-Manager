@@ -3,25 +3,27 @@ let registerUrl = 'https://storemanagerapi2.herokuapp.com//api/v2/auth/signup';
 const registerform = document.getElementById('userregistration');
 
 
-const loginUser = () => {
-    fetch(loginUrl, {
+const registerUser = () => {
+    fetch(registerUrl, {
       method: 'POST',
       body: JSON.stringify({
+        username: document.getElementById('name').value,
         email: document.getElementById('email').value,
-        password: document.getElementById('password').value
+        password: document.getElementById('password').value,
+        role: document.getElementById('role')
       }),
       headers: {
+        'Authorization' : `Bearer ${localStorage.getItem("token")}`,
         'Content-type' : 'application/json'
       }
     })
     .then(response => response.json())
-    .then(loginData => {
-        if(loginData.message === "Log in successful!"){
-            localStorage.setItem('token', loginData.access_token);
+    .then(data => {
+        if(data.message === "User created successfully"){
             window.location.href = "../UI/owner.html";
         } else{
-            throw new Error(loginData.message);
+            throw new Error(data.message);
         }
-        console.log(loginData);
+        console.log(data);
     })
   }
