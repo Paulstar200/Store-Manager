@@ -3,7 +3,7 @@
     <head>
         <meta charset="utf-8">
         <title>Store owner</title>
-        <meta name="viewport" content="width=device-width; initial-scale=1; maximum-scale=1">
+        <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
         <link rel="stylesheet" href="static/main.css">
         <link href="https://fonts.googleapis.com/css?family=Changa+One|Fira+Sans" rel="stylesheet">
     </head>
@@ -31,24 +31,28 @@
             <div class="main-items mainsqueeze">
                 <div class="owner ownerheight">
                     <h1 class='ownerhead'>Create product</h1>
-                    <form>
+                    <form id="productform" method="POST">
                         <p class="createproduct">
                             <label>Product name</label><br>
-                            <input type="text">
+                            <input id="createname" type="text">
                         </p>
                         <p class="createproduct">
-                            <label>Description</label><br>
-                            <input type="text">
+                            <label>Inventory</label><br>
+                            <input id="createinventory" type="text">
                         </p>
                         <p class="createproduct">
                             <label>Price</label><br>
-                            <input type="text">
+                            <input id="createprice" type="text">
                         </p>
                         <p class="createproduct">
-                            <label>Quantity</label><br>
-                            <input type="text">
+                            <label>Minimum Stock</label><br>
+                            <input id="createstock" type="text">
                         </p>
-                        <button class="createbtn">Create!</button>
+                        <p class="createproduct">
+                            <label>Category</label><br>
+                            <input id="createcategory" type="text">
+                        </p>
+                        <input class="createbtn" type="button" onclick="createProduct()" value="Create!">
                     </form>
                 </div>
             </div>
@@ -59,5 +63,6 @@
         <footer>
             <p>&copy;2018 Store Manager </p>
         </footer>
+        <script src="static/js/create_product.js"></script>
     </body>
 </html>
