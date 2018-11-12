@@ -774,6 +774,21 @@ INDIVIDUAL PRODUCT PAGE
     color: maroon;
 }
 
+.productdescription {
+    font-family: 'Fira sans', sans-serif;
+    color: #444;
+    margin-bottom: 10px;
+}
+
+.add-cart {
+    background-color: #2f1b56;
+    font-family: "Fira sans", sans-serif;
+    color: #fff;
+    font-size: 20px;
+    margin-left: 10px;
+    padding: 10px;
+}
+
 /***********************
 PAGE: CART
 ************************/
