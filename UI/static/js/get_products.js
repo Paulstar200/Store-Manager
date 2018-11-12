@@ -11,29 +11,25 @@ const getProducts = () => {
     })
     .then(response => response.json())
     .then(data => {
-        if(data.message === "Successfully retrieved products"){
-            let ul =document.querySelector('#myproducts');
-            let df = new DocumentFragment();
-            data.forEach( (product) => {
-                let li = document.createElement('li');
-                let pn = document.createElement('p');
-                let pr = document.createElement('p');
-                let bn = document.createElement('button');
-                li.className = "individualprod";
-                bn.className = "prodbtn";
-                pn.textContent = ''.concat("Product: ", product.name);
-                pr.textContent = ''.concat("Price: ", product.price);
-                bn.textContent = "Add to cart";
-                li.appendChild(pn);
-                li.appendChild(pr);
-                li.appendChild(bn);
-                df.appendChild(li);
-            } )
-            ul.appendChild(df);
+        if(data['Products']){
+            let item = data['Products'][0];
+            console.log(item);
+            let ul = document.getElementById("myproducts");
+            let li = document.createElement('li');
+            let pn = document.createElement('p');
+            let pr = document.createElement('p');
+            let bt = document.createElement('button')
+            pn.innerHTML = item.name;
+            pr.innerHTML = item.price;
+            bt.innerHTML = "Add to cart";
+            li.append(pn);
+            li.append(pr);
+            li.append(bt);
+            ul.append(li);
         } else{
-            throw new Error(data.message);
+            document.getElementById('error-prod').innerHTML = "No products yet";
         }
-        console.log(data);
+        
     }).catch( (err) => {
         console.log('ERROR:', err.message);
     })
