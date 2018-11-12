@@ -20,7 +20,7 @@ const loginUser = () => {
             localStorage.setItem('token', loginData.access_token);
             window.location.href = "../UI/owner.html";
         } else{
-            throw new Error(loginData.message);
+            document.getElementById('error-message').innerHTML = loginData.message;
         }
         console.log(loginData);
     })

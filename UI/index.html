@@ -17,7 +17,7 @@
         </header>
         <div id="admin">
             <h2 class="account">ACCOUNT LOGIN</h2>
-            <form id="loginform" action="" method="POST">
+            <form id="loginform" action="" name="loginForm" method="POST">
                 <p class="inputfields">
                    <label class="login">EMAIL</label><br>
                     <input id="email" class="input" type="text">
@@ -27,6 +27,9 @@
                     <input id="password" class="input" type="password">
                 </p>
                 <input class="btn" type="button" onclick="loginUser()" value="Log in">
+                <div>
+                    <p id="error-message"></p>
+                </div>
                 <p class="forgot"><a href="#">Forgot password?</a></p>
             </form>
            
