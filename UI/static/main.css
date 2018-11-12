@@ -435,7 +435,7 @@ PAGE: CREATE SALE ATTENDANT
     margin: 50px auto 0 auto;
     box-shadow: 1px 1px 10px 1px grey;
     width: 300px;
-    height: 300px;
+    height: 350px;
     border-radius: 4%;
     font-family: 'Fira sans', sans-serif;
 }
@@ -462,11 +462,23 @@ PAGE: CREATE SALE ATTENDANT
 }
 .back {
     margin-top: 20px;
+    margin-bottom: 20px;
     font-family: 'Fira sans', sans-serif;
+    text-align:center;
 }
+
+
 
 #create a {
     color: #3232ff;
+}
+
+#error-user {
+    color: red;
+}
+
+#usercreated {
+    color: #2f1b56;
 }
 
 

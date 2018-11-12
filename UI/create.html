@@ -29,6 +29,9 @@
                 <p class="subdescription">Logged in as: Store Owner</p>
             </div>
             <div id="create">
+                <div>
+                    <p id="usercreated"></p>
+                </div>
                 <h1 class="newbie">Create new user</h1>
                 <form id="userregistration" action="" method="POST">
                     <label>Username</label>
@@ -40,12 +43,12 @@
                     <label>Role</label>
                     <p><input id="role" type="text"></p>
                     <input class="newbtn" type="button" onclick="registerUser()" value="Create">
-                    <div>
-                        <p id=""></p>
+                    <div id="createusererror">
+                        <p id="error-user"></p>
                     </div>
                 </form>
-                <a href="owner.html"><p class="back">Go Back</p></a>
             </div>
+            <a href="owner.html"><p class="back">Go Back</p></a>
         </div>
         <footer>
             <p>&copy;2018 Store Manager</p>
