@@ -13,7 +13,7 @@ const getProducts = () => {
     .then(data => {
         if(data['Products']){
             var myArray = data['Products'];
-            console.log(myArray[0]);
+            
             for (let num = 0; num < myArray.length; num++) {
                 let item = myArray[num];
                 console.log(item);

@@ -774,10 +774,15 @@ INDIVIDUAL PRODUCT PAGE
     color: maroon;
 }
 
+#indiv {
+    background-color: #fff;
+}
 .productdescription {
     font-family: 'Fira sans', sans-serif;
     color: #444;
     margin-bottom: 10px;
+    font-size: 20px;
+    border-bottom: 1px solid #444;
 }
 
 .add-cart {
@@ -786,9 +791,19 @@ INDIVIDUAL PRODUCT PAGE
     color: #fff;
     font-size: 20px;
     margin-left: 10px;
-    padding: 10px;
+    padding: 7px;
+    margin-top: 50px;
 }
 
+#myproducts li {
+    background: #fff;
+    margin-left: 30px;
+    border-radius: 3%;
+    box-shadow: 1px 1px 5px 1px #606060;
+    height: 150px;
+    width: 200px;
+    margin-bottom: 50px;
+}
 /***********************
 PAGE: CART
 ************************/
@@ -1163,7 +1178,7 @@ RESPONSIVE
 
     #individual {
         width: 95%;
-        margin: 20px -12px 20px -23px;
+        margin: 20px 50px;
         
     }
 
@@ -1181,6 +1196,7 @@ RESPONSIVE
     .categorypg > button {
         width: 20%;
     }
+
 
     /*******************
     CART
