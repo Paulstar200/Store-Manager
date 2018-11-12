@@ -23,6 +23,7 @@ const createProduct = () => {
     .then(data => {
         if(data.message === "Product created successfully"){
             window.location.href = "../UI/editproduct.html";
+            localStorage.setItem("id", data.ProductModel.id);
             document.getElementById('product-create').innerHTML = data.message;
         } else{
             document.getElementById('error-product').innerHTML = '<p class="myerrormsg">Please insert all fields correctly</p>';
