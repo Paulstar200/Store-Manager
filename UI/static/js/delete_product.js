@@ -58,15 +58,15 @@ const deleteproduct = (productId) => {
                 myArray.forEach(product => {
                     output += `
                     <tr>
-                        <td>${product.id}</td>
+                        <td>${product["product id"]}</td>
                         <td>${product.name}</td>
                         <td>${product.category}</td>
                         <td>${product.inventory}</td>
                         <td>${product.minimum_stock}</td>
                         <td>${product.price}</td>
                         
-                        <td><button class="button" onclick = "openUpdateSection(${product.id})"><i class="fa fa-edit"></i></button></td>
-                        <td><button class="button" onclick = "deleteProduct(${product.id})"><i class="fa fa-trash"></i></button></td>
+                        <td><button class="delete-btn" onclick = "deleteProduct(${product["product id"]})">Delete</button></td>
+                        <td><button class="modify-btn" onclick = "openUpdateSection(${product["product id"]}))">Modify</button></td>
                     </tr>
                 `
                     document.getElementById("t2").innerHTML = output;
@@ -74,7 +74,25 @@ const deleteproduct = (productId) => {
                 localStorage.setItem("allproducts", JSON.stringify(data['Products']))
             }
             else {
-                alert("No products to fetch");
+                alert("No products yet");
             }
         });
+}
+
+function deleteProduct(productId) {
+  let product_Id = productId
+  let option = confirm("Do you really want to delete this product?");
+  if (option) {
+      fetch(`https://storemanagerapi2.herokuapp.com/api/v2/products/` + product_Id, {
+          method: 'DELETE',
+          headers: {
+              'Authorization': localStorage.getItem("token")
+          }
+      })
+          .then(res => res.json())
+          .then(data => {
+              alert(data.message || data.Message);
+              window.location.reload();
+          })
+  }
 }

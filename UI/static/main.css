@@ -466,6 +466,18 @@ table#t2 th {
     text-align: center;
 }
 
+.modify-btn {
+    background-color: #2f1b56;
+    color: #fff;
+    font-family: 'Fira sans', sans-serif;
+}
+
+.delete-btn {
+    background-color: red;
+    color: #fff;
+    font-family: 'Fira sans', sans-serif;
+}
+
 /*****************
 PAGE: CREATE SALE ATTENDANT
 ****************/
