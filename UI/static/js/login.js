@@ -1,4 +1,4 @@
-let loginUrl = 'https://storemanagerapi2.herokuapp.com//api/v2/auth/login';
+let loginUrl = 'https://storemanagerapi2.herokuapp.com/api/v2/auth/login';
 
 const login_form = document.getElementById('loginform');
 

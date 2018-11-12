@@ -1,4 +1,4 @@
-let salesUrl = 'https://storemanagerapi2.herokuapp.com//api/v2/sales';
+let salesUrl = 'https://storemanagerapi2.herokuapp.com/api/v2/sales';
 
 const salesRecords = () => {
     fetch(salesUrl, {
