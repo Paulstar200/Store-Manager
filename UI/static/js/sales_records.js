@@ -15,12 +15,12 @@ const salesRecords = () => {
             for (i = 0; i < data; i++) {
                 document.getElementbyId("adminview").innerHTML += `
                 <tr>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
+                    <td>"${data[i].id}"</td>
+                    <td>"${data[i].product_name}"</td>
+                    <td>"${data[i].quantity}"</td>
+                    <td>"${data[i].price}"</td>
+                    <td>"${data[i].total_price}"</td>
+                    <td>"${data[i].sold_by}"</td>
                 </tr>
                  `
             }
