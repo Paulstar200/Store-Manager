@@ -1194,7 +1194,10 @@ RESPONSIVE
         margin-top: 10px;
         display: block;
         margin-bottom: 20px;
-        
-        
+    }
+
+    #adminview {
+       margin-left:50px;
+      
     }
 }
