@@ -642,6 +642,13 @@ table#adminview th {
     box-shadow: 1px 1px 5px 2px grey;
 }
 
+#nosales {
+    margin-top: 60px;
+    font-size: 30px;
+    color: red;
+    font-family: 'Open sans', sans-serif;
+}
+
 /*****************
 INDIVIDUAL PRODUCT PAGE
 ****************/
@@ -1174,5 +1181,23 @@ RESPONSIVE
 
     .myerrormsg {
         margin-left: 50px;
+    }
+
+    /***********************
+    VIEW RECORDS
+    ***********************/
+    .filter {
+        width: 80%;
+        margin: 30px auto;
+    }
+    .salespan {
+        margin-top: 10px;
+        display: block;
+        margin-bottom: 20px;
+    }
+
+    #adminview {
+       margin-left:50px;
+      
     }
 }

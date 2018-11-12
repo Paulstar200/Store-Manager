@@ -3,11 +3,11 @@
     <head>
         <meta charset="utf-8">
         <title>View records</title>
-        <meta name="viewport" content="width=device-width; initial-scale=1; maximum-scale=1">
+        <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
         <link rel="stylesheet" href="static/main.css">
         <link href="https://fonts.googleapis.com/css?family=Changa+One|Fira+Sans:400,700|Open+Sans:400,700" rel="stylesheet">
     </head>
-    <body>
+    <body onload="salesRecords()">
         <div id="main">
             <header id="attendanthead">
                 <a href="#" id="logo">
@@ -28,49 +28,32 @@
             <div id="recordsales">
                 <h1>SALES RECORDS</h1>
                 <p class="filter">Filter by:
-                    <a href="#"><span class="salespan firstspan">Number of sales </span></a>
-                    <a href="#"><span class="salespan secondspan">Sale category</span></a>
-                    <a href="#"><span class="salespan thirdspan">Date of sale</span></a>
+                    
+                    <a href="#"><span class="salespan secondspan">Sale items</span></a>
+                    <a href="#"><span class="salespan thirdspan">Quantity sold</span></a>
+                    <a href="#"><span class="salespan thirdspan">Total price</span></a>
                 </p>
-                <table id="adminview">
-                    <tr>
-                        <th>Attendant name</th>
-                        <th>Sales records</th>
-                    </tr>
-                    <tr>
-                        <td>James Waweru</td>
-                        <td><button class="viewbtn">View</button></td>
-                    </tr>
-                    <tr>
-                        <td>Marshal Json</td>
-                        <td><button class="viewbtn">View</button></td>
-                    </tr>
-                    <tr>
-                        <td>Phil Dunfie</td>
-                        <td><button class="viewbtn">View</button></td>
-                    </tr>
-                    <tr>
-                        <td>James Hitler</td>
-                        <td><button class="viewbtn">View</button></td>
-                    </tr>
-                    <tr>
-                        <td>Busta Rhymes</td>
-                        <td><button class="viewbtn">View</button></td>
-                    </tr>
-                    <tr>
-                        <td>Davido Savage</td>
-                        <td><button class="viewbtn">View</button></td>
-                    </tr>
-                    <tr>
-                        <td>Victor Thomas</td>
-                        <td><button class="viewbtn">View</button></td>
-                    </tr>
-                </table>
+                <div style="overflow-x:auto">
+                    <table id="adminview">
+                        <tr>
+                            <th>Sale id</th>
+                            <th>Product name</th>
+                            <th>Quantity</th>
+                            <th>Price</th>
+                            <th>Total Price</th>
+                            <th>Sold by</th>
+                        </tr>
+                        
+                    </table>
+            </div>
+            
+                <p id="nosales"></p>
                 <p class="parentrecord"><a class="profrecords"href="owner.html">Return to profile</a></p>
             </div>
         </div>
         <footer>
             <p>&copy;2018 Store Manager </p>
         </footer>
+        <script src="static/js/sales_records.js"></script>
     </body>
 </html>
