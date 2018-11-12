@@ -13,12 +13,22 @@ const salesRecords = () => {
         if(data.message === "Successfully retrieved the sales records"){
             let i;
             for (i = 0; i < data; i++) {
-                document.getElementbyId("adminview").innerHTML += ``
+                document.getElementbyId("adminview").innerHTML += `
+                <tr>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                </tr>
+                 `
             }
-            window.location.href = "../UI/viewrecords.html";
-
         } else{
-            document.getElementById('nosales').innerHTML = "No sales records at the moment";
+            let table = document.getElementById('adminview');
+            table.style.display = "none";
+            document.getElementById('nosales').innerHTML = data.message;
+           
         }
         console.log(data);
     })
