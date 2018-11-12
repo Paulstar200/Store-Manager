@@ -4,6 +4,7 @@ const product_form = document.getElementById('productform');
 
 
 const createProduct = () => {
+    
     fetch(createProductUrl, {
       method: 'POST',
       body: JSON.stringify({
@@ -21,9 +22,10 @@ const createProduct = () => {
     .then(response => response.json())
     .then(data => {
         if(data.message === "Product created successfully"){
-            window.location.href = "../UI/individual.html";
+            window.location.href = "../UI/editproduct.html";
+            document.getElementById('product-create').innerHTML = data.message;
         } else{
-            throw new Error(data.message);
+            document.getElementById('error-product').innerHTML = '<p class="myerrormsg">Please insert all fields correctly</p>';
         }
         console.log(data);
     })
