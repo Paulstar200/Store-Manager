@@ -831,12 +831,12 @@ PAGE: EDIT PRODUCT
 
 .createbtn {
     font-family: 'Fira sans', sans-serif;
-    margin-top: 10px;
+    margin-top: -10px;
     background-color: #2f1b56;
     color: #fff;
     padding: 10px;
-    margin-left: 140px;
-    
+    margin-left: 130px;
+    margin-bottom: -8px;
 }
 
 .modifyhead {
@@ -863,13 +863,14 @@ PAGE: EDIT PRODUCT
 }
 
 .goback {
-    margin-left: 620px;
-    
+    margin-left: 600px;
+   
 }
 
 .gobacktext {
     font-family: "Fira sans", sans-serif;
     margin-bottom: 20px;
+    
 }
 
 .gobacktext > a {
@@ -879,6 +880,23 @@ PAGE: EDIT PRODUCT
 
 .gobacktext > a:hover {
     color: maroon;
+}
+
+#error-product {
+    color: red;
+    margin-left: 50px;
+    font-family: 'Open sans', sans-serif;
+    
+}
+
+#editerror {
+    margin-top: 10px;
+    
+}
+
+#product-create {
+    color: blue;
+    font-family: 'Open sans', sans-serif;
 }
 
 
@@ -1127,7 +1145,7 @@ RESPONSIVE
 
     .goback{
         width: 40%;
-        margin-left: 120px;
+        margin-left: 150px;
     }
 
     .gobacktext {
@@ -1136,5 +1154,13 @@ RESPONSIVE
     .gobacktext > a {
 
         font-size: 1.3em;
+    }
+
+    #error-product {
+        margin-right: 120px;
+    }
+
+    .myerrormsg {
+        margin-left: 50px;
     }
 }
