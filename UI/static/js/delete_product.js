@@ -5,6 +5,7 @@
           'Content-type' : 'application/json;'
         }
       })
+      
         .then(response => response.json())
         .then(data => {
             if (data) {
@@ -36,7 +37,9 @@
                 <td><button class="modify-btn" onclick = "productUpdater(${prod_num})">Update</button></td>
             </tr>
         ` 
+
             document.getElementById("t2").innerHTML = output;
+            document.getElementById('nullproducts').remove();
         });
         localStorage.setItem("allproducts", JSON.stringify(data['Products']))
         }
@@ -95,11 +98,10 @@ function updateProduct(e) {
       })
           .then(res => res.json())
           .then(data => {
-              console.log(data["message"]);
-              //console.log(data[0]);
+              console.log(data.message);
               let errormessage = document.getElementById("update-error-msg");
               errormessage.innerHTML = '';
-              errormessage.innerHTML = "<p>Insert proper values</p>";
+              errormessage.innerHTML = "<p>Input valid values and ensure product exists</p>";
               console.log(errormessage);
               if (data['message'] === "Product updated successfully!"){
                 alert(data['message']);

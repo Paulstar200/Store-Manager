@@ -517,6 +517,15 @@ table#t2 th {
     margin-bottom: 20px;
 }
 
+#nullproducts {
+    text-align: center;
+    font-family: 'Fira sans', sans-serif;
+    color: red;
+    font-size: 20px;
+    margin-bottom: 20px;
+}
+
+
 #updateprodform {
     margin-bottom: 15px;
 }
