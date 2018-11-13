@@ -470,14 +470,39 @@ table#t2 th {
     background-color: #2f1b56;
     color: #fff;
     font-family: 'Fira sans', sans-serif;
+    font-size: 20px;
 }
 
 .delete-btn {
     background-color: red;
     color: #fff;
     font-family: 'Fira sans', sans-serif;
+    font-size: 20px;
 }
 
+#mod-form-prod {
+    text-align: center;
+    background: #fff;
+    font-family: 'Fira sans', sans-serif;
+    margin-top: 30px;
+    width: 30%;
+    margin-left: 450px;
+    border-radius: 2%;
+    box-shadow: 1px 1px 10px 1px #444;
+}
+
+.inputsprod {
+    margin-bottom: 20px;
+    height: 30px;
+    font-family: 'Fira sans', sans-serif;
+}
+
+.updatebtn {
+    background-color: #2f1b56;
+    color: #fff;
+    padding: 10px;
+    font-family: 'Fira sans', sans-serif;
+}
 /*****************
 PAGE: CREATE SALE ATTENDANT
 ****************/
@@ -1304,5 +1329,10 @@ RESPONSIVE
     #capt {
         line-height: 1;
         font-size: 23px;
+    }
+
+    #mod-form-prod {
+        width: 90%;
+        margin-left: 18px;
     }
 }
