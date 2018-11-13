@@ -895,18 +895,20 @@ INDIVIDUAL PRODUCT PAGE
     font-size: 20px;
     margin-left: 10px;
     padding: 7px;
-    margin-top: 50px;
+    margin-top: 20px;
 }
 
 #myproducts li {
     background: #fff;
     margin-left: 30px;
-    border-radius: 3%;
+    border-radius: 2%;
     box-shadow: 1px 1px 5px 1px #606060;
     height: 150px;
     width: 200px;
     margin-bottom: 50px;
+    padding: 20px;
 }
+
 /***********************
 PAGE: CART
 ************************/
@@ -1147,13 +1149,10 @@ RESPONSIVE
 
     }
 
-    nav li {
-
-		text-align: center;
+    #navbar li {
 		width: 100%;
 		padding: 10px 0;
-		margin: 0;
-
+		margin-right: 0;
 	}
 
 	nav:hover ul {

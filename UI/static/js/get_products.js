@@ -21,17 +21,22 @@ const getProducts = () => {
                 let li = document.createElement('li');
                 let pn = document.createElement('p');
                 let pr = document.createElement('p');
+                let pc = document.createElement('p');
                 let bt = document.createElement('button');
                 
                 pn.innerHTML = "".concat("Product: ", item.name);
+                pc.innerHTML = "".concat("Category: ", item.category);
                 pr.innerHTML = "".concat("Price: ", item.price);
+                
                 bt.innerHTML = "Add to cart";
 
-                pr.classList.add("productdescription")
-                pn.classList.add("productdescription")
+                pr.classList.add("productdescription");
+                pn.classList.add("productdescription");
+                pc.classList.add("productdescription");
                 
                 bt.classList.add('add-cart');
                 li.append(pn);
+                li.append(pc);
                 li.append(pr);
                 li.append(bt);
                 
@@ -46,3 +51,5 @@ const getProducts = () => {
         console.log('ERROR:', err.message);
     })
   }
+
+
