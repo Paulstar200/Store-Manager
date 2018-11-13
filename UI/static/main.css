@@ -121,8 +121,6 @@ input:focus {
 }
 
 
-
-
 /************************
 PAGE: ATTENDANT.HTML
 *************************/
@@ -140,36 +138,24 @@ body {
 }
 
 header > a {
-
     color: #fff;
     text-decoration: none;
     font-family: 'Fira Sans', sans-serif;
-
 }
 
 a:hover {
-
     color: #b2b2ff;
-
 }
 
 #attendanthead {
-
     background: #2f1b56;
     width: 100%;
     height: 100px;
-    /* position: fixed; */
-
     top: 0;
     left: 0;
-    /*border-bottom: 4px solid #4C9CF1;*/
-    /* z-index: 100; */
-
-
 }
 
 #logo{
-
     margin: 20px;
     float: left;
     width: 200px;
@@ -177,7 +163,6 @@ a:hover {
     font-size: 2em;
     display: block;
     font-family: 'Changa One', cursive;
-
 }
 
 #attendantnav {
@@ -204,7 +189,6 @@ ul {
 }
 
 
-
 #navbaritems > li {
     display: inline-block;
     float: left;
@@ -218,9 +202,7 @@ li a {
 }
 
 .current {
-
     color: #b2b2ff;
-
 }
 
 .attendantdescription {
@@ -229,8 +211,26 @@ li a {
 }
 
 .attendantlist {
-    background-color: 'black';
+    background-color: #fff;
+    box-shadow: 1px 1px 10px 0px #444;
+    width: 250px;
+    height: 150px;
+    padding: 10px 0px 10px 10px;
+    border-radius: 2%;
+    font-family: 'Fira sans', sans-serif;
+    color: #2f1b56;
+    margin-bottom: 40px;
+    margin-left: 30px;
+    float: left;
 }
+
+#usertitle {
+    font-family: 'Fira sans', sans-serif;
+    margin-top:10px;
+    font-size: 30px;
+    text-align: center;
+}
+
 
 
 /*****
@@ -246,7 +246,8 @@ BODY
 
 #wrapper {
     margin-top: 50px;
-    text-align: center;
+    margin-left: 50px;
+    margin-right: 5px;
 }
 
 #records {
@@ -310,6 +311,18 @@ footer {
     min-height: calc(100vh - 40px);
 }
 
+.clearfix::after {
+    content: "";
+    clear: both;
+    display: table;
+}
+
+.backtext {
+    font-family: 'Fira sans', sans-serif;
+    font-size: 20px;
+    margin-bottom: 20px;
+    text-align: center;
+}
 /**********************
 PAGE: STORE OWNER
 ***********************/
@@ -1049,7 +1062,7 @@ PAGE: EDIT PRODUCT
 
 .goback {
     margin-left: 600px;
-   
+    font-family: "Fira sans", sans-serif;
 }
 
 .gobacktext {
@@ -1388,4 +1401,14 @@ RESPONSIVE
         width: 90%;
         margin-left: 18px;
     }
+
+
+    /*********************
+    ATTENDANT.HTML
+    ***********************/
+    .attendantlist {
+        margin: 20px auto;
+    }
+
+    
 }

@@ -34,8 +34,8 @@ const getAttendants = () => {
                 pId.className = 'attendantdescription';
                 pname.className = 'attendantdescription';
                 pemail.className = 'attendantdescription';
-                prole.className = 'attendantdescription'
-                li.className = 'attendantlist'
+                prole.className = 'attendantdescription';
+                li.classList.add('attendantlist');
 
                 
                 li.append(pname);

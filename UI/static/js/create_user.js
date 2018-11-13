@@ -20,8 +20,9 @@ const registerUser = () => {
     .then(response => response.json())
     .then(data => {
         if(data.message === "User created successfully"){
-            window.location.href = "../UI/create.html";
+            window.location.href = "../UI/attendant.html";
             document.getElementById('usercreated').innerHTML = "User created";
+            alert("User created successfully")
         } else{
           document.getElementById('error-user').innerHTML = data.message;
         }
