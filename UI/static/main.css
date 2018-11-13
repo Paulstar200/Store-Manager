@@ -195,20 +195,17 @@ a:hover {
 }
 
 a:hover#menu-icon {
-
     background-color: #fff;
     border-radius: 4px 4px 0 0;
-
 }
 
 ul {
-
     list-style: none;
-
 }
 
-li {
 
+
+#navbaritems > li {
     display: inline-block;
     float: left;
     font-size: 30px;
@@ -224,6 +221,15 @@ li a {
 
     color: #b2b2ff;
 
+}
+
+.attendantdescription {
+    font-size: 20px;
+    margin-bottom: 5px;
+}
+
+.attendantlist {
+    background-color: 'black';
 }
 
 
@@ -342,6 +348,27 @@ PAGE: STORE OWNER
     font-size: 20px;
     margin-bottom: 10px;
     margin-left: 80px;
+}
+
+.ownerdetails > li {
+    display: inline-block;
+    float: left;
+    font-size: 30px;
+    padding: 10px 10px 10px 40px;
+}
+
+.prodlist > li {
+    display: inline-block;
+    float: left;
+    font-size: 30px;
+    padding: 10px 10px 10px 40px;
+}
+
+.saleslist > li {
+    display: inline-block;
+    float: left;
+    font-size: 30px;
+    padding: 10px 10px 10px 40px;
 }
 
 .owner-prod {
