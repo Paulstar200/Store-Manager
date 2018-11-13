@@ -62,8 +62,8 @@ function deleteProduct(productId) {
       })
           .then(res => res.json())
           .then(data => {
-              alert(data['Message']);
-              console.log(data['Message']);
+              alert(data['message']);
+              console.log(data['message']);
               window.location.reload();
           })
   }
