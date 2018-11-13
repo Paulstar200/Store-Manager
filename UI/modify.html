@@ -25,31 +25,33 @@
                 </ul>
                 </nav>
             </header>
-            <div  id="description">
+            <div id="description">
                 <p class="subdescription">Logged in as: Store Owner</p>
             </div>
-            <p id="capt">MODIFY/DELETE PRODUCTS</p>
+            <h1 id="capt">MODIFY/DELETE PRODUCTS</h1>
+            <h2 id="titleprod">AVAILABLE PRODUCTS</h2>
+            <p id="nullproducts">NO PRODUCTS YET</p>
              <div style="overflow-x:auto">
                 <table id="t2">
-                
+                    
                 </table>
             </div>
 
-            <form class="mod-prod-form" id="mod-form-prod">
-                    <h1>Update Product</h1>
-                    <label  id="message-update" style="color:red"></label><br><br>
-                    <label>Name:</label>
-                    <input class="inputsprod" id="form-name" type="text" placeholder="Name"><br>
-                    <label>Price:</label>
-                    <input class="inputsprod" id="form-price" type="text" placeholder="Price"><br>
-                    <label>Inventory:</label>
-                    <input class="inputsprod" id="form-inventory" type="text" placeholder="Inventory"><br>
-                    <label>Minimum Stock:</label>
-                    <input class="inputsprod"id="form-min_stock" type="text" placeholder="Minimum Stock"><br>
-                    <label>Category:</label>
-                    <input class="inputsprod" id="form-category" type="text" placeholder="Category"><br>
+            <form id="mod-form-prod">
+                <h1 id="updateprodform">Update Product</h1>
                 
-                    <button type="submit" class="updatebtn">Update</button><br><br>
+                <label>Name:</label>
+                <input class="inputsprod" id="form-name" type="text" ><br>
+                <label>Price:</label>
+                <input class="inputsprod" id="form-price" type="text" ><br>
+                <label>Inventory:</label>
+                <input class="inputsprod" id="form-inventory" type="text" ><br>
+                <label>Minimum Stock:</label>
+                <input class="inputsprod"id="form-min_stock" type="text" ><br>
+                <label>Category:</label>
+                <input class="inputsprod" id="form-category" type="text" ><br>
+                <label  id="update-error-msg"></label><br>
+                <button type="submit" class="updatebtn">Update</button><br><br>
                 </form>
             <div class="goback modback">
                 <p class="gobacktext modifyback"><a href="owner.html">Back</a></p>
