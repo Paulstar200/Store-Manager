@@ -3,11 +3,11 @@
     <head>
         <meta charset="utf-8">
         <title>Attendant</title>
-        <meta name="viewport" content="width=device-width; initial-scale=1; maximum-scale=1">
+        <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
         <link rel="stylesheet" href="static/main.css">
         <link href="https://fonts.googleapis.com/css?family=Changa+One|Fira+Sans" rel="stylesheet">
     </head>
-    <body>
+    <body onload="getAttendants()">
         <div id="main">
         <header id="attendanthead">
             <a href="#" id="logo">
@@ -16,9 +16,9 @@
             </a>
             <nav id="attendantnav">
                 <a href="#" id="menu-icon"></a>
-            <ul>
+            <ul id="navbaritems">
                 <li><a href="owner.html" >Profile</a></li>
-                <li><a href="attendant.html" class="current">Attendants</a></li>
+                <li><a href="attendant.html" class="current">Employees</a></li>
                 <li><a href="individual.html">Products</a></li>
                 <li><a href="cart.html">Cart</a></li>
                 <li><a href="index.html">Logout</a></li>
@@ -26,24 +26,20 @@
             </nav>
         </header>
         <div id="description">
-            <p class="subdescription">Logged in as: Store Attendant</p>
+            <p class="subdescription">Logged in as: Store Owner</p>
         </div>
-        <div id="wrapper">
-            <ul>
-                <li>
-                    <img class="avatar" src="static/img/avatar.jpg">
-                </li>
+
+        <h1 id="usertitle">USERS</h1>
+        <div id="wrapper" class="clearfix">
+            <ul id="theattendants">
+
             </ul>
-            <p class="wrap-items">Name: Paul Vitalis</p><br>
-            <p class="wrap-items">Role: Store attendant</p><br>
         </div>
-        <div id="records">
-            <p class="wrap-items"><a href="records.html">Sales record</a></p><br>
-            <p class="wrap-items"><a href="cart.html">Products in cart</a></p><br>
-        </div>
+        <p class="backtext"><a href="owner.html">Go back</a></p>
         </div>
         <footer>
             <p>&copy;2018 Store Manager </p>
         </footer>
+        <script src="static/js/get_attendants.js"></script>
     </body>
 </html>

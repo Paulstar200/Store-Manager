@@ -22,6 +22,7 @@ const createProduct = () => {
     .then(response => response.json())
     .then(data => {
         if(data.message === "Product created successfully"){
+            alert("Product created successfully");
             window.location.href = "../UI/individual.html";
             localStorage.setItem("id", data.ProductModel.id);
             document.getElementById('product-create').innerHTML = data.message;
