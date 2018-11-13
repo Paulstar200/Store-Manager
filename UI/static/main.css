@@ -503,6 +503,10 @@ table#t2 th {
     padding: 10px;
     font-family: 'Fira sans', sans-serif;
 }
+
+#update-error-msg {
+    color: red;
+}
 /*****************
 PAGE: CREATE SALE ATTENDANT
 ****************/

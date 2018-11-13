@@ -19,9 +19,12 @@
                 <th>Modify</th>
             </tr>`;
             let myArray = data['Products']
+            //console.log(data['Products']);
                 myArray.forEach(product => {
-                  console.log(product["product id"])
+                  //console.log(product)
                   let prod_id = product["product id"];
+                    let prod_num = parseInt(prod_id, 10);
+                    console.log(prod_num);
                     output += `
                     <tr>
                         <td>${product["product id"]}</td>
@@ -30,8 +33,8 @@
                         <td>${product.inventory}</td>
                         <td>${product.minimum_stock}</td>
                         <td>${product.price}</td>
-                        <td><button class="delete-btn" onclick = "deleteProduct(${prod_id})">Delete</button></td>
-                        <td><button class="modify-btn" onclick = "updateProd(${product["product id"]})">Modify</button></td>
+                        <td><button class="delete-btn" onclick = "deleteProduct(${prod_num})">Delete</button></td>
+                        <td><button class="modify-btn" onclick = "updateProd(${prod_num})">Modify</button></td>
                     </tr>
                 ` 
                 
@@ -46,13 +49,14 @@
 }
 
 function deleteProduct(productId) {
-  let product_Id = productId;
+  let prod_num = parseInt(productId, 10);
+  console.log(prod_num);
   let answer = confirm("Would you like to delete this product?");
   if (answer) {
-      fetch(`https://storemanagerapi2.herokuapp.com/api/v2/products/` + product_Id, {
+      fetch(`https://storemanagerapi2.herokuapp.com/api/v2/products/` + prod_num, {
           method: 'DELETE',
           headers: {
-              'Authorization': localStorage.getItem("token"),
+              'Authorization': `Bearer ${localStorage.getItem("token")}`,
               'Content-type' : 'application/json'
           }
       })
@@ -73,35 +77,33 @@ if (updateform){
 
 function updateProduct(e) {
   e.preventDefault();
-  let name = document.getElementById("form-name").value;
-  let category = document.getElementById("form-category").value;
-  let price = document.getElementById("form-price").value;
-  let inventory = document.getElementById("form-inventory").value;
-  let minimum_stock = document.getElementById("form-min_stock").value;
   product_Id = localStorage.getItem("productId");
-  let option = confirm("Would you like to update this product?");
-  if (option) {
+  console.log(product_Id);
+  let question = confirm("Would you like to update this product?");
+  if (question) {
       fetch(`https://storemanagerapi2.herokuapp.com/api/v2/products/` + product_Id, {
           method: 'PUT',
           headers: {
               'Content-Type': 'application/json',
-              'Authorization': localStorage.getItem("token")
+              'Authorization': `Bearer ${localStorage.getItem("token")}`
           },
           body: JSON.stringify({
-              "name": name,
-              "category": category,
-              "price": price,
-              "inventory": inventory,
-              "minimum_stock": minimum_stock
+              "name": document.getElementById("form-name").value,
+              "category": document.getElementById("form-category").value,
+              "price": document.getElementById("form-price").value,
+              "inventory": document.getElementById("form-inventory").value,
+              "minimum_stock": document.getElementById("form-min_stock").value
           })
       })
           .then(res => res.json())
           .then(data => {
-              let messagebox = document.getElementById("message-update");
-              messagebox.innerHTML = '';
-              messagebox.innerHTML = data.Message || data.message;
-              if (data.Message == "Product updated successfully!"){
-              window.location.reload();
+              console.log(data["message"]);
+              //console.log(data[0]);
+              let errormessage = document.getElementById("update-error-msg");
+              errormessage.innerHTML = '';
+              errormessage.innerHTML = data["message"];
+              if (data['message'] == "Product updated successfully!"){
+                window.location.reload();
               }
           })
           .catch((err) => console.log(err))
