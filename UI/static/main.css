@@ -426,6 +426,83 @@ PAGE: MODIFY.HTML
     color: blue;
 }
 
+table {
+    width: 100%;
+}
+
+table, th, td {
+    border: 1px solid black;
+    border-collapse: collapse;
+
+}
+
+th, td {
+    padding: 15px;
+}
+
+#t2 {
+    font-family: 'Fira sans', sans-serif;
+    width: 80%;
+    margin: 0 auto;
+   
+}
+
+
+
+table#t2 tr:nth-child(even) {
+    background-color: #eee;
+}
+
+table#t2 tr:nth-child(odd) {
+    background-color: #fff;
+}
+
+table#t2 th {
+    color: white;
+    background-color: #2f1b56;
+}
+
+#capt {
+    text-align: center;
+}
+
+.modify-btn {
+    background-color: #2f1b56;
+    color: #fff;
+    font-family: 'Fira sans', sans-serif;
+    font-size: 20px;
+}
+
+.delete-btn {
+    background-color: red;
+    color: #fff;
+    font-family: 'Fira sans', sans-serif;
+    font-size: 20px;
+}
+
+#mod-form-prod {
+    text-align: center;
+    background: #fff;
+    font-family: 'Fira sans', sans-serif;
+    margin-top: 30px;
+    width: 30%;
+    margin-left: 450px;
+    border-radius: 2%;
+    box-shadow: 1px 1px 10px 1px #444;
+}
+
+.inputsprod {
+    margin-bottom: 20px;
+    height: 30px;
+    font-family: 'Fira sans', sans-serif;
+}
+
+.updatebtn {
+    background-color: #2f1b56;
+    color: #fff;
+    padding: 10px;
+    font-family: 'Fira sans', sans-serif;
+}
 /*****************
 PAGE: CREATE SALE ATTENDANT
 ****************/
@@ -701,8 +778,8 @@ INDIVIDUAL PRODUCT PAGE
     font-family: 'Fira sans', sans-serif;
     border-bottom: 0.5px solid #d3d3d3;
     font-size: 20px;
-   `width: 95%;
-   `line-height: 1.2;
+    width: 95%;
+    line-height: 1.2;
 }
 
 .prodbtn {
@@ -727,6 +804,43 @@ INDIVIDUAL PRODUCT PAGE
     font-size: 20px;
 }
 
+#error-prod {
+    text-align: center;
+    font-family: 'Open sans', sans-serif;
+    font-size: 30px;
+    color: maroon;
+}
+
+#indiv {
+    background-color: #fff;
+}
+.productdescription {
+    font-family: 'Fira sans', sans-serif;
+    color: #444;
+    margin-bottom: 10px;
+    font-size: 20px;
+    border-bottom: 1px solid #444;
+}
+
+.add-cart {
+    background-color: #2f1b56;
+    font-family: "Fira sans", sans-serif;
+    color: #fff;
+    font-size: 20px;
+    margin-left: 10px;
+    padding: 7px;
+    margin-top: 50px;
+}
+
+#myproducts li {
+    background: #fff;
+    margin-left: 30px;
+    border-radius: 3%;
+    box-shadow: 1px 1px 5px 1px #606060;
+    height: 150px;
+    width: 200px;
+    margin-bottom: 50px;
+}
 /***********************
 PAGE: CART
 ************************/
@@ -827,7 +941,6 @@ PAGE: EDIT PRODUCT
 
 .ownerhead {
     margin-bottom: 20px;
-
     margin-top: 30px;
     font-family: 'Fira sans', sans-serif;
     font-size: 1.5em;
@@ -1102,7 +1215,7 @@ RESPONSIVE
 
     #individual {
         width: 95%;
-        margin: 20px -12px 20px -23px;
+        margin: 20px 50px;
         
     }
 
@@ -1120,6 +1233,7 @@ RESPONSIVE
     .categorypg > button {
         width: 20%;
     }
+
 
     /*******************
     CART
@@ -1199,5 +1313,26 @@ RESPONSIVE
     #adminview {
        margin-left:50px;
       
+    }
+
+    /****************
+    MODIFY.HTML
+    ***************/
+    #t2 tr {
+        line-height: 15px;
+    }
+
+    #t2 td {
+        white-space: nowrap;
+    }
+
+    #capt {
+        line-height: 1;
+        font-size: 23px;
+    }
+
+    #mod-form-prod {
+        width: 90%;
+        margin-left: 18px;
     }
 }

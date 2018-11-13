@@ -7,7 +7,7 @@
         <link rel="stylesheet" href="static/main.css">
         <link href="https://fonts.googleapis.com/css?family=Changa+One|Fira+Sans" rel="stylesheet">
     </head>
-    <body>
+    <body id="indiv" onload="getProducts()">
         <div id="main">
             <header id="attendanthead">
                 <a href="owner.html" id="logo">
@@ -34,14 +34,17 @@
         <div id="categories">
             <p class="categorypg">Category:
                 <button id="selectbtn">Gaming</button>
-                <button>Furniture</button>
-                <button>Electronics</button>
+                <button>Appliances</button>
+                <button>Phones</button>
             </p>
         </div>
         <div id="individual">
             <ul id="myproducts">
 
             </ul>
+        </div>
+        <div>
+            <p id="error-prod"></p>
         </div>
         </div>
         <footer>
