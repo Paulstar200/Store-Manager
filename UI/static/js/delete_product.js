@@ -102,6 +102,7 @@ function updateProduct(e) {
               errormessage.innerHTML = "<p>Insert proper values</p>";
               console.log(errormessage);
               if (data['message'] === "Product updated successfully!"){
+                alert(data['message']);
                 window.location.reload();
               }
           })
