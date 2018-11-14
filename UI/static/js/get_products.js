@@ -57,7 +57,6 @@ function searchInput() {
     ul = document.getElementById("myproducts");
     li = ul.getElementsByTagName('li');
 
-    // Loop through all list items, and hide those who don't match the search query
     for (i = 0; i < li.length; i++) {
         p = li[i].getElementsByTagName("p")[0];
         if (p.innerHTML.toUpperCase().indexOf(filter) > -1) {
