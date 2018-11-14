@@ -101,11 +101,13 @@ function updateProduct(e) {
               console.log(data.message);
               let errormessage = document.getElementById("update-error-msg");
               errormessage.innerHTML = '';
-              errormessage.innerHTML = "<p>Input valid values and ensure product exists</p>";
-              console.log(errormessage);
               if (data['message'] === "Product updated successfully!"){
                 alert(data['message']);
                 window.location.reload();
+              } 
+              else {
+                errormessage.innerHTML = "<p>Input valid values and ensure product exists</p>";
+                console.log(errormessage);
               }
           })
           .catch((err) => console.log(err))
