@@ -907,6 +907,7 @@ INDIVIDUAL PRODUCT PAGE
     width: 200px;
     margin-bottom: 50px;
     padding: 20px;
+    float: left;
 }
 
 /***********************
@@ -1097,6 +1098,17 @@ PAGE: EDIT PRODUCT
 #product-create {
     color: blue;
     font-family: 'Open sans', sans-serif;
+}
+
+
+/**********************
+SELL PRODUCT
+*********************/
+
+#error-sale {
+    font-family: 'Fira sans', sans-serif;
+    font-size: 20px;
+    color: maroon;
 }
 
 

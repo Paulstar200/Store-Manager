@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>Store owner</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+        <link rel="stylesheet" href="static/main.css">
+        <link href="https://fonts.googleapis.com/css?family=Changa+One|Fira+Sans" rel="stylesheet">
+    </head>
+    <body>
+        <div id="main">
+            <header id="attendanthead">
+                <a href="#" id="logo">
+                    <p class="title">STORE</p>
+                    <p class="title">MANAGER</p>
+                </a>
+                <nav id="attendantnav">
+                    <a href="#" id="menu-icon"></a>
+                <ul id="navbaritems" class="unordered">
+                    <li><a href="owner.html">Profile</a></li>
+                    <li><a href="attendant.html">Employees</a></li>
+                    <li><a href="individual.html">Products</a></li>
+                    <li><a href="individual.html" class="current">Sell</a></li>
+                    <li><a href="cart.html">Cart</a></li>
+                    <li><a href="index.html">Logout</a></li>
+                </ul>
+                </nav>
+            </header>
+            <div id="description">
+                <p class="subdescription">Logged in as: Store Owner</p>
+            </div>
+            <div class="main-items mainsqueeze">
+                <div class="owner ownerheight">
+                    <div>
+                        <p id="sell-create"></p>
+                    </div>
+                    <h1 class='ownerhead'>Sell product</h1>
+                    <form id="sale-form" method="POST">
+                        <p class="createproduct">
+                            <label>Product name</label><br>
+                            <input id="salename" type="text">
+                        </p>
+                        <p class="createproduct">
+                            <label>Quantity</label><br>
+                            <input id="salequantity" type="text">
+                        </p>
+                        <input class="createbtn" type="button" onclick="sellProduct()" value="Sell">
+                        <div id="editerror">
+                            <p id="error-sale"></p>
+                        </div>
+                    </form>
+                </div>
+            </div>
+            <div class="goback">
+                <p class="gobacktext"><a href="owner.html">Back</a></p>
+            </div>
+        </div>
+        <footer>
+            <p>&copy;2018 Store Manager </p>
+        </footer>
+        <script src="static/js/sell_product.js"></script>
+    </body>
+</html>
