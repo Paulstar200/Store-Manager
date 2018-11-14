@@ -37,11 +37,11 @@
                 <td><button class="modify-btn" onclick = "productUpdater(${prod_num})">Update</button></td>
             </tr>
         ` 
-
             document.getElementById("t2").innerHTML = output;
-            document.getElementById('nullproducts').remove();
         });
-        localStorage.setItem("allproducts", JSON.stringify(data['Products']))
+            localStorage.setItem("allproducts", JSON.stringify(data['Products']));
+            var elem = document.getElementById("nullproducts");
+            elem.remove();
         }
         else {
             alert("No products");
