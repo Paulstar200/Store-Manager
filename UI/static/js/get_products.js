@@ -28,8 +28,6 @@ const getProducts = () => {
                 pc.innerHTML = "".concat("Category: ", item.category);
                 pr.innerHTML = "".concat("Price: ", item.price);
                 
-                bt.innerHTML = "Add to cart";
-
                 pr.classList.add("productdescription");
                 pn.classList.add("productdescription");
                 pc.classList.add("productdescription");
@@ -38,7 +36,6 @@ const getProducts = () => {
                 li.append(pn);
                 li.append(pc);
                 li.append(pr);
-                li.append(bt);
                 
                 ul.append(li);
             }
@@ -53,3 +50,19 @@ const getProducts = () => {
   }
 
 
+function searchInput() {
+    var input, filter, ul, li, p, i;
+    input = document.getElementById("myInput");
+    filter = input.value.toUpperCase();
+    ul = document.getElementById("myproducts");
+    li = ul.getElementsByTagName('li');
+
+    for (i = 0; i < li.length; i++) {
+        p = li[i].getElementsByTagName("p")[0];
+        if (p.innerHTML.toUpperCase().indexOf(filter) > -1) {
+            li[i].style.display = "";
+        } else {
+            li[i].style.display = "none";
+        }
+    }
+}
