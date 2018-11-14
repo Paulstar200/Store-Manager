@@ -1101,6 +1101,17 @@ PAGE: EDIT PRODUCT
 }
 
 
+/**********************
+SELL PRODUCT
+*********************/
+
+#error-sale {
+    font-family: 'Fira sans', sans-serif;
+    font-size: 20px;
+    color: maroon;
+}
+
+
 
 /*****************
 RESPONSIVE
