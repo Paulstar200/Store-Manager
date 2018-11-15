@@ -17,7 +17,7 @@ const loginUser = () => {
     .then(response => response.json())
     .then(loginData => {
         if(loginData.message === "Log in successful!"){
-            localStorage.setItem('token', loginData.access_token);z
+            localStorage.setItem('token', loginData.access_token);
             window.location.href = "../UI/owner.html";
         } else{
             document.getElementById('error-message').innerHTML = loginData.message;
