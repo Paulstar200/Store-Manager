@@ -22,20 +22,25 @@ const getProducts = () => {
                 let pn = document.createElement('p');
                 let pr = document.createElement('p');
                 let pc = document.createElement('p');
+                let pq = document.createElement('p');
                 let bt = document.createElement('button');
                 
                 pn.innerHTML = "".concat("Product: ", item.name);
                 pc.innerHTML = "".concat("Category: ", item.category);
-                pr.innerHTML = "".concat("Price: ", item.price);
+                pr.innerHTML = "".concat("Price: Ksh. ", item.price);
+                pq.innerHTML = "".concat("Available stock: ", item.inventory);
+
                 
                 pr.classList.add("productdescription");
                 pn.classList.add("productdescription");
                 pc.classList.add("productdescription");
+                pq.classList.add("productdescription");
                 
                 bt.classList.add('add-cart');
                 li.append(pn);
                 li.append(pc);
                 li.append(pr);
+                li.append(pq);
                 
                 ul.append(li);
             }

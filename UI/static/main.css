@@ -342,6 +342,7 @@ PAGE: STORE OWNER
     margin: 0 auto;
 
 }
+
 .ownerdiv {
     text-align: center;
     margin-top: 30px;
@@ -358,9 +359,10 @@ PAGE: STORE OWNER
 }
 
 .ownerdetails > .owneritem {
-    font-size: 20px;
+    font-size: 25px;
     margin-bottom: 10px;
-    margin-left: 80px;
+    margin-left: 65px;
+    
 }
 
 .ownerdetails > li {
@@ -393,6 +395,7 @@ PAGE: STORE OWNER
     margin-bottom: -20px;
     height: 230px;
     border-radius: 2%;
+    
 }
 
 .ownerdelete {
@@ -421,10 +424,11 @@ PAGE: STORE OWNER
     font-size: 30px;
     line-height: 1.4;
     text-align: center;
+    
 }
 
 .owneritem > a {
-    color: grey;
+    color: #444;
 }
 
 .owneritem > a:hover {
@@ -433,6 +437,7 @@ PAGE: STORE OWNER
 
 .owneritem2 > .firstedit {
     margin-left: 50px;
+    
 }
 
 .owneritem2 > .modifyedit {
@@ -448,6 +453,7 @@ PAGE: STORE OWNER
 
 .owneritem {
     font-family: 'Fira Sans', sans-serif;
+    color: #444;
 }
 
 /*****************
@@ -910,84 +916,6 @@ INDIVIDUAL PRODUCT PAGE
     float: left;
 }
 
-/***********************
-PAGE: CART
-************************/
-
-#cart {
-
-   max-width: 960px;
-   margin:10px auto;
-   font-family: 'Fira sans', sans-serif;
-
-}
-
-#cart > h1 {
-    margin-bottom: 10px;
-}
-
-#cart > p{
-    color: #000;
-    font-size: 30px;
-    line-height: 1.5;
-    margin-left: 500px;
-}
-
-#shopcart {
-    margin-bottom: 20px;
-    width: 80%;
-}
-
-table#shopcart tr:nth-child(even) {
-    background-color: #eee;
-}
-
-table#shopcart tr:nth-child(odd) {
-    background-color: #fff;
-}
-
-table#shopcart th {
-    color: white;
-    background-color: #2f1b56;
-}
-
-#checkproceed {
-    background-color: #fff;
-    box-shadow: -2px 1px 20px 1px #2f1b56;
-    height: 50px;
-    width: 100%;
-    padding-top: 30px;
-}
-
-#smalledit {
-    float: right;
-    margin-right: 30px;
-}
-
-.proceed {
-    background: #2f1b56;
-    color: #fff;
-    font-family: 'Fira sans', sans-serif;
-    padding-top: 10px;
-    padding-bottom: 10px;
-    padding-left: 5px;
-    padding-right: 5px;
-    width: 300px;
-    margin-top: 10px;
-    box-shadow: 0.5px 1px 3px 1px #000;
-}
-
-.conshop {
-    padding-top: 10px;
-    padding-bottom: 10px;
-    padding-left: 5px;
-    padding-right: 5px;
-    width: 300px;
-    margin-top: 10px;
-    box-shadow: 0.5px 1px 3px 1px #000;
-    font-family: 'Fira sans', sans-serif;
-    color: #2f1b56;
-}
 
 
 /*********************
@@ -1312,26 +1240,7 @@ RESPONSIVE
     }
 
 
-    /*******************
-    CART
-    *******************/
-
-    #checkproceed {
-        width: 100%;
-        margin: 0 auto;
-    }
-
-    #smalledit > a {
-        font-size: 15px;
-
-    }
-
-    .conshop {
-        margin-left: -100px;
-
-    }
-
-        /*********************
+    /*********************
     PAGE: EDIT PRODUCT
     *********************/
 
