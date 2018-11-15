@@ -100,13 +100,16 @@ function updateProduct(e) {
           .then(data => {
               console.log(data.message);
               let errormessage = document.getElementById("update-error-msg");
-              errormessage.innerHTML = '';
               if (data['message'] === "Product updated successfully!"){
                 alert(data['message']);
                 window.location.reload();
               } 
               else {
-                errormessage.innerHTML = "<p>Input valid values and ensure product exists</p>";
+                if (role == "attendant") {
+                    errormessage.innerHTML = data["message"];
+                } else {
+                    errormessage.innerHTML = "<p>Please input valid values and ensure product exists</p>"
+                }
                 console.log(errormessage);
               }
           })
