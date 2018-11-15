@@ -105,11 +105,7 @@ function updateProduct(e) {
                 window.location.reload();
               } 
               else {
-                if (role == "attendant") {
-                    errormessage.innerHTML = data["message"];
-                } else {
-                    errormessage.innerHTML = "<p>Please input valid values and ensure product exists</p>"
-                }
+                errormessage.innerHTML = "<p>Please input valid values and ensure product exists</p>"
                 console.log(errormessage);
               }
           })
