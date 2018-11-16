@@ -871,7 +871,7 @@ INDIVIDUAL PRODUCT PAGE
     text-align: center;
     width: 300px;
     height: 30px;
-    margin-left: 500px;
+    margin-left: 430px;
     font-family: 'Fira sans', sans-serif;
     font-size: 20px;
 }
@@ -880,7 +880,7 @@ INDIVIDUAL PRODUCT PAGE
     text-align: center;
     font-family: 'Open sans', sans-serif;
     font-size: 30px;
-    color: maroon;
+    color: red;
 }
 
 #indiv {
@@ -915,6 +915,8 @@ INDIVIDUAL PRODUCT PAGE
     padding: 20px;
     float: left;
 }
+
+
 
 
 
@@ -1036,7 +1038,7 @@ SELL PRODUCT
 #error-sale {
     font-family: 'Fira sans', sans-serif;
     font-size: 20px;
-    color: maroon;
+    color: red;
 }
 
 #salename, #salequantity {
