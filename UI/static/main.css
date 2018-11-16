@@ -1040,6 +1040,7 @@ SELL PRODUCT
     font-family: 'Fira sans', sans-serif;
     font-size: 20px;
     color: red;
+    margin-left: 60px;
 }
 
 #salename, #salequantity {
