@@ -1039,6 +1039,19 @@ SELL PRODUCT
     color: maroon;
 }
 
+#salename, #salequantity {
+    margin-left: 10px;
+}
+
+#salebtn {
+    width: 90px;
+}
+
+#sale-form label {
+    margin-left: 16px;
+    
+}
+
 
 
 /*****************

@@ -1,7 +1,7 @@
 let allAttendantsUrl = 'https://storemanagerapi2.herokuapp.com/api/v2/users';
 
 
-const getAttendants = () => {
+window.onload = () => {
     fetch(allAttendantsUrl, {
       method: 'GET',
       headers: {

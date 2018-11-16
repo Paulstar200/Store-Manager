@@ -18,7 +18,7 @@ const sellProduct = () => {
     .then(response => response.json())
     .then(data => {
         if(data.message === "Sale successful"){
-            alert("Sale successful");
+            alert("Sale successful \n Quantity remaining: " + data["remaining quantity"]);
             window.location.href = "../UI/sell_product.html";
             localStorage.setItem("id", data.SalesModel.id);
             document.getElementById('sell-create').innerHTML = data.message;
