@@ -458,11 +458,11 @@ PAGE: STORE OWNER
 }
 
 #usernamerole {
-    margin-left: 25px;
+    margin-left: 15px;
 }
 
 #usernameprof {
-    margin-left: -50px;
+    margin-left: -10px;
 }
 
 /*****************
@@ -1245,11 +1245,11 @@ RESPONSIVE
     }
 
     #usernameprof {
-        margin-left: -20px;
+        margin-left: 10px;
     }
 
     #usernamerole {
-        margin-left: 55px; 
+        margin-left: 35px; 
     }
     
     /*****************************
