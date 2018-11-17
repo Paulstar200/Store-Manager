@@ -576,6 +576,13 @@ table#t2 th {
 #updateprodform {
     margin-bottom: 15px;
 }
+
+#deleteerror {
+    font-family: 'Fira sans', sans-serif;
+    color: red;
+    text-align: center;
+    margin-top: 10px;
+}
 /*****************
 PAGE: CREATE SALE ATTENDANT
 ****************/
