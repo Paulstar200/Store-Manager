@@ -63,7 +63,7 @@ function deleteProduct(productId) {
       })
           .then(res => res.json())
           .then(data => {
-              alert(data['message']);
+              alert("Product deleted");
               console.log(data['message']);
               window.location.reload();
           })
