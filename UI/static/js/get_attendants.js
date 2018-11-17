@@ -15,6 +15,16 @@ window.onload = () => {
             console.log(data.message)
             var myArray = data['users'];
             console.log(myArray);
+
+            let thediv = document.getElementById('description');
+            let i = 0;
+            for (i; i < data['users'].length; i++) {
+                let username = localStorage.getItem('username');
+                if (username == data['users'][i].username) {
+                    thediv.innerHTML = `<p class="subdescription">Logged in as: ${data['users'][i].username} (${data['users'][i].role})</p>`
+                }
+                console.log(data['users'][i].username);
+            }
             
             for (let num = 0; num < myArray.length; num++) {
                 let user = myArray[num];
@@ -51,6 +61,6 @@ window.onload = () => {
         }
         
     }).catch( (err) => {
-        console.log('ERROR:', err.message);
+        console.log(err);
     })
   }
