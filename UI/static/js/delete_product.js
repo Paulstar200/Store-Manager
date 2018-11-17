@@ -98,15 +98,16 @@ function updateProduct(e) {
       })
           .then(res => res.json())
           .then(data => {
-              console.log(data.message);
+              //console.log(data.message);
+              let dams = data.message;
               let errormessage = document.getElementById("update-error-msg");
               if (data['message'] === "Product updated successfully!"){
                 alert(data['message']);
                 window.location.reload();
               } 
               else {
-                errormessage.innerHTML = "<p>Please input valid values and ensure product exists</p>"
-                console.log(errormessage);
+                errormessage.innerHTML = data["message"];
+                console.log("Price cannot be a blank");
               }
           })
           .catch((err) => console.log(err))
