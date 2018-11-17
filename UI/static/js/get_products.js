@@ -46,7 +46,7 @@ const getProducts = () => {
             }
  
         } else{
-            document.getElementById('error-prod').innerHTML = "No products yet";
+            document.getElementById('error-prod').innerHTML = "No products at the moment";
         }
         
     }).catch( (err) => {

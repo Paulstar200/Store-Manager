@@ -361,7 +361,7 @@ PAGE: STORE OWNER
 .ownerdetails > .owneritem {
     font-size: 25px;
     margin-bottom: 10px;
-    margin-left: 65px;
+    margin-left: 35px;
     
 }
 
@@ -424,7 +424,7 @@ PAGE: STORE OWNER
     font-size: 30px;
     line-height: 1.4;
     text-align: center;
-    
+    margin-left: -20px;
 }
 
 .owneritem > a {
@@ -449,6 +449,7 @@ PAGE: STORE OWNER
 .displaypic {
     border-radius: 100%;
     width: 50%;
+    margin-right: 25px;
 }
 
 .owneritem {
@@ -871,7 +872,7 @@ INDIVIDUAL PRODUCT PAGE
     text-align: center;
     width: 300px;
     height: 30px;
-    margin-left: 500px;
+    margin-left: 430px;
     font-family: 'Fira sans', sans-serif;
     font-size: 20px;
 }
@@ -880,7 +881,7 @@ INDIVIDUAL PRODUCT PAGE
     text-align: center;
     font-family: 'Open sans', sans-serif;
     font-size: 30px;
-    color: maroon;
+    color: red;
 }
 
 #indiv {
@@ -915,6 +916,8 @@ INDIVIDUAL PRODUCT PAGE
     padding: 20px;
     float: left;
 }
+
+
 
 
 
@@ -1036,7 +1039,8 @@ SELL PRODUCT
 #error-sale {
     font-family: 'Fira sans', sans-serif;
     font-size: 20px;
-    color: maroon;
+    color: red;
+    margin-left: 60px;
 }
 
 #salename, #salequantity {

@@ -42,10 +42,8 @@ const salesRecords = () => {
             elem.remove();
     }
         else{
-            let table = document.getElementById('adminview');
-            table.style.display = "none";
-            document.getElementById('nosales').innerHTML = data.message;
+            console.log(data);
         }
-        console.log(data);
+        
     })
   }

@@ -23,7 +23,8 @@ const sellProduct = () => {
             localStorage.setItem("id", data.SalesModel.id);
             document.getElementById('sell-create').innerHTML = data.message;
         } else{
-            document.getElementById('error-sale').innerHTML = data.message;
+            document.getElementById('error-sale').innerHTML = data["message"]["quantity"] || data.message;
+            console.log(data["message"]);
         }
         console.log(data);
     })
