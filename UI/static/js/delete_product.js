@@ -106,7 +106,7 @@ function updateProduct(e) {
                 window.location.reload();
               } 
               else {
-                errormessage.innerHTML = data["message"];
+                errormessage.innerHTML = "<p>Input valid values and ensure you have required authorization</p>";
                 console.log("Price cannot be a blank");
               }
           })
