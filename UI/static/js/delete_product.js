@@ -63,9 +63,16 @@ function deleteProduct(productId) {
       })
           .then(res => res.json())
           .then(data => {
-              alert("Product deleted");
-              console.log(data['message']);
-              window.location.reload();
+            let errormessage = document.getElementById("deleteerror");
+            if (data['message'] === "Deleted") {
+                alert("Product deleted");
+                console.log(data['message']);
+                window.location.reload();
+            } else {
+                errormessage.innerHTML = data['message'];
+                console.log(data['message']);
+            }
+              
           })
   }
 }
@@ -98,15 +105,13 @@ function updateProduct(e) {
       })
           .then(res => res.json())
           .then(data => {
-              //console.log(data.message);
-              let dams = data.message;
               let errormessage = document.getElementById("update-error-msg");
               if (data['message'] === "Product updated successfully!"){
                 alert(data['message']);
                 window.location.reload();
               } 
               else {
-                errormessage.innerHTML = data["message"];
+                errormessage.innerHTML = "<p>Input valid values and ensure you have required authorization to access this feature</p>";
                 console.log("Price cannot be a blank");
               }
           })
