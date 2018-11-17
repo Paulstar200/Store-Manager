@@ -462,7 +462,7 @@ PAGE: STORE OWNER
 }
 
 #usernameprof {
-    margin-left: -10px;
+    margin-left: -25px;
 }
 
 /*****************
@@ -606,15 +606,15 @@ PAGE: CREATE SALE ATTENDANT
 }
 
 #create > h1 {
-    padding-top: 50px;
+    padding-top: 20px;
     padding-bottom: 10px;
     font-family: 'Fira sans', sans-serif;
+    font-size: 25px;
 }
 
 .newbtn {
     margin-top: 10px;
-    background-color: black;
-    border-radius: 10%;
+    background-color: #2f1b56;
     width: 100px;
     height: 30px;
     color: #fff;
@@ -632,8 +632,6 @@ PAGE: CREATE SALE ATTENDANT
     text-align:center;
 }
 
-
-
 #create a {
     color: #3232ff;
 }
@@ -644,6 +642,15 @@ PAGE: CREATE SALE ATTENDANT
 
 #usercreated {
     color: #2f1b56;
+}
+
+#userregistration input {
+    height: 25px;
+    font-size: 15px;
+}
+
+#userregistration .newbtn {
+    height: 40px;
 }
 
 
@@ -722,8 +729,7 @@ PAGE: VIEW RECORDS
 #recordsales > h1 {
     margin-top: 50px;
     color: #000;
-    font-size: 50px;
-
+    font-size: 30px;
 }
 
 .filter {
@@ -1072,7 +1078,6 @@ SELL PRODUCT
 }
 
 
-
 /*****************
 RESPONSIVE
 ****************/
@@ -1343,6 +1348,10 @@ RESPONSIVE
       
     }
 
+    #recordsales > h1 {
+        line-height: 1;
+        font-size: 35px;
+    }
     /****************
     MODIFY.HTML
     ***************/

@@ -11,11 +11,9 @@ window.onload = function getUser() {
     })
         .then(res => res.json())
         .then(respdata => {
-            //console.log(respdata['users'][0].username);
             let thediv = document.getElementById('description');
             let i = 0;
             for (i; i < respdata['users'].length; i++) {
-                //thediv.innerHTML = `<p>Logged in as: ${respdata['users'][i].username}</p>`
                 let username = localStorage.getItem('username');
                 let usernameprof = document.getElementById('usernameprof');
                 let usernamerole = document.getElementById('usernamerole');

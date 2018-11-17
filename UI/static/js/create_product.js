@@ -27,7 +27,7 @@ const createProduct = () => {
             localStorage.setItem("id", data.ProductModel.id);
             document.getElementById('product-create').innerHTML = data.message;
         } else{
-            document.getElementById('error-product').innerHTML = '<p class="myerrormsg">Please insert all fields correctly</p>';
+            document.getElementById('error-product').innerHTML = '<p class="myerrormsg">Insert all fields correctly & ensure you are an admin</p>';
         }
         console.log(data);
     })
