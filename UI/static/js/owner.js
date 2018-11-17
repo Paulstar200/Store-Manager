@@ -11,15 +11,7 @@ window.onload = function getUser() {
         .then(res => res.json())
         .then(respdata => {
             console.log(respdata['message']);
-            let user1 = respdata.users[0]
-            console.log(user1.username);
-
-            let mydiv = document.getElementById("description");
-            let plogin = document.createElement("p");
-
-            plogin.className = "subdescription";
-            plogin.innerHTML = "Logged in as: " + user1.username;
-            mydiv.append(plogin);
-        })
+        }
+        )
     
   }

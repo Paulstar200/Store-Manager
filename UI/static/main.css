@@ -1203,16 +1203,18 @@ RESPONSIVE
 
 
     .owneritem2 > .firstedit {
-        margin-left: -5px;
+        margin-left: 20px;
+
     }
     
     .owneritem2 > .modifyedit {
-        margin-left: 5px;
+        margin-left: 25px;
     }
 
     .saleslist {
         margin-top: -40px;
     }
+
 
     .saleslist p {
         margin-right: 50px;
