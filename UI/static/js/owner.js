@@ -17,8 +17,12 @@ window.onload = function getUser() {
             for (i; i < respdata['users'].length; i++) {
                 //thediv.innerHTML = `<p>Logged in as: ${respdata['users'][i].username}</p>`
                 let username = localStorage.getItem('username');
+                let usernameprof = document.getElementById('usernameprof');
+                let usernamerole = document.getElementById('usernamerole');
                 if (username == respdata['users'][i].username) {
-                    thediv.innerHTML = `<p class="subdescription">Logged in as: ${respdata['users'][i].username}</p>`
+                    thediv.innerHTML = `<p class="subdescription">Logged in as: ${respdata['users'][i].username} (${respdata['users'][i].role})</p>`
+                    usernameprof.innerHTML = `Username: ${respdata['users'][i].username}`;
+                    usernamerole.innerHTML = `Role: ${respdata['users'][i].role}`;
                 }
                 console.log(respdata['users'][i].username);
             }

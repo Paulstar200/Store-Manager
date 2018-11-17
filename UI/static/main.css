@@ -457,6 +457,14 @@ PAGE: STORE OWNER
     color: #444;
 }
 
+#usernamerole {
+    margin-left: 25px;
+}
+
+#usernameprof {
+    margin-left: -50px;
+}
+
 /*****************
 PAGE: MODIFY.HTML
 ****************/
@@ -1182,7 +1190,7 @@ RESPONSIVE
     }
 
     .ownername {
-        margin-right: 40px;
+        margin-right: -30px;
     }
 
     .ownername > p{
@@ -1236,6 +1244,14 @@ RESPONSIVE
         margin-top: -50px;
     }
 
+    #usernameprof {
+        margin-left: -20px;
+    }
+
+    #usernamerole {
+        margin-left: 55px; 
+    }
+    
     /*****************************
     INDIVIDUAL PRODUCT
     ******************************/
