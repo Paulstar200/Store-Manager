@@ -1038,6 +1038,7 @@ PAGE: EDIT PRODUCT
 #error-product {
     color: red;
     margin-left: 50px;
+    
     font-family: 'Open sans', sans-serif;
     
 }
@@ -1323,12 +1324,10 @@ RESPONSIVE
     }
 
     #error-product {
-        margin-right: 120px;
+        margin-left: -10px;
     }
 
-    .myerrormsg {
-        margin-left: 50px;
-    }
+    
 
     /***********************
     VIEW RECORDS
