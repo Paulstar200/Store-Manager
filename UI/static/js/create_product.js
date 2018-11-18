@@ -27,7 +27,7 @@ const createProduct = () => {
             localStorage.setItem("id", data.ProductModel.id);
             document.getElementById('product-create').innerHTML = data.message;
         } else{
-            document.getElementById('error-product').innerHTML = 'Insert all fields correctly & ensure you are an admin';
+            document.getElementById('error-product').innerHTML = 'Insert all fields properly and ensure no blanks';
         }
         console.log(data);
     })

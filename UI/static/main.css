@@ -116,8 +116,6 @@ input:focus {
         width: 25%;
         height: 220px;
     }
-
-
 }
 
 
@@ -166,10 +164,8 @@ a:hover {
 }
 
 #attendantnav {
-
     float: right;
     padding: 20px;
-
 }
 
 #menu-icon {
@@ -285,7 +281,6 @@ BODY
     display: inline-block;
     padding-bottom: 5px;
     padding-top: 5px;
-
 }
 
 .wrap-items > a {
@@ -304,7 +299,6 @@ footer {
     font-family: 'Fira Sans', sans-serif;
     color: #505050;
     padding-top: 15px;
-
 }
 
 #main {
@@ -323,6 +317,7 @@ footer {
     margin-bottom: 20px;
     text-align: center;
 }
+
 /**********************
 PAGE: STORE OWNER
 ***********************/
@@ -357,6 +352,33 @@ PAGE: STORE OWNER
     background: #dcdcdc;
     box-shadow: 1px 1px 15px 2px grey;
 }
+
+#replacement {
+    color: #444;
+}
+
+#replacement:hover {
+    color: #3232ff;
+}
+
+#firstspanreplace {
+    color: #444;
+    
+}
+
+#firstspanreplace:hover {
+    color: #3232ff;
+}
+
+#secondspanreplace {
+    color: #444;
+    margin-left: 8px;
+}
+
+#secondspanreplace:hover {
+    color: #3232ff;
+}
+
 
 .ownerdetails > .owneritem {
     font-size: 25px;
@@ -395,7 +417,6 @@ PAGE: STORE OWNER
     margin-bottom: -20px;
     height: 230px;
     border-radius: 2%;
-    
 }
 
 .ownerdelete {
@@ -416,7 +437,6 @@ PAGE: STORE OWNER
 
 .saleslist > .owneritem {
     margin-bottom: 20px;
-
 }
 
 .prodlist > .owneritem {
@@ -499,10 +519,7 @@ th, td {
     font-family: 'Fira sans', sans-serif;
     width: 80%;
     margin: 0 auto;
-   
 }
-
-
 
 table#t2 tr:nth-child(even) {
     background-color: #eee;
@@ -665,7 +682,6 @@ table {
 table, th, td {
     border: 1px solid black;
     border-collapse: collapse;
-
 }
 
 th, td {
@@ -785,7 +801,6 @@ PAGE: VIEW RECORDS
 }
 
 
-
 table#adminview tr:nth-child(even) {
     background-color: #eee;
 }
@@ -819,6 +834,43 @@ table#adminview th {
     color: red;
     font-family: 'Open sans', sans-serif;
 }
+
+/*********************
+STOCK.html
+********************/
+#t3 {
+    max-width: 50%;
+    margin-top: 30px;
+    margin-bottom: 30px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+
+th, td {
+    padding: 15px;
+}
+
+#t3 {
+    font-family: 'Fira sans', sans-serif;
+    width: 80%;
+    margin: 0 auto;
+   
+}
+
+table#t3 th {
+    color: white;
+    background-color: #2f1b56;
+}
+
+table#t3 tr:nth-child(even) {
+    background-color: #eee;
+}
+
+table#t3 tr:nth-child(odd) {
+    background-color: #fff;
+}
+
 
 /*****************
 INDIVIDUAL PRODUCT PAGE
@@ -938,10 +990,6 @@ INDIVIDUAL PRODUCT PAGE
     float: left;
 }
 
-
-
-
-
 /*********************
 PAGE: EDIT PRODUCT
 *********************/
@@ -1032,15 +1080,13 @@ PAGE: EDIT PRODUCT
 }
 
 .gobacktext > a:hover {
-    color: maroon;
+    color: #444;
 }
 
 #error-product {
     color: red;
     margin-left: 50px;
-    
     font-family: 'Open sans', sans-serif;
-    
 }
 
 #editerror {
@@ -1084,10 +1130,6 @@ RESPONSIVE
 ****************/
 
 @media only screen and (max-width: 640px) {
-    /* #attendanthead {
-        width: 300%;
-    } */
-
     .btn {
         font-size: 16px;
         line-height: 1.2;
@@ -1107,24 +1149,19 @@ RESPONSIVE
     }
 
 	#menu-icon {
-
 		display:inline-block;
-
     }
 
     nav ul, nav:active ul {
-
 		display: none;
 		position: absolute;
-		padding: 20px;
 		background: #fff;
 		border: 2px solid #444;
-		right: 20px;
+		right: 10px;
 		top: 60px;
-		width: 50%;
+		width: 55%;
         border-radius: 3%;
         box-shadow: -1.5px -1px 10px 1px #444;
-
     }
 
     #navbar li {
@@ -1134,9 +1171,7 @@ RESPONSIVE
 	}
 
 	nav:hover ul {
-
 		display: block;
-
     }
 
     #wrapper {
@@ -1150,7 +1185,6 @@ RESPONSIVE
         padding-bottom: 5px;
         padding-top: 5px;
         font-size: 20px;
-
     }
 
     #records {
