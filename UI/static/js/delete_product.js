@@ -137,7 +137,7 @@ function updateProduct(e) {
                 window.location.reload();
               } 
               else {
-                errormessage.innerHTML = "<p>Input valid values and ensure you have required authorization to access this feature</p>";
+                errormessage.innerHTML = "<p>Please input proper values</p>";
                 console.log("Price cannot be a blank");
               }
           })

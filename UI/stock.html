@@ -20,7 +20,7 @@
                     <li><a href="owner.html">Dashboard</a></li>
                     <li><a href="attendant.html">Employees</a></li>
                     <li><a href="individual.html">Products</a></li>
-                    <li><a href="sell_product.html" class="current">Sell</a></li>
+                    <li><a href="sell_product.html">Sell</a></li>
                     <li><a href="index.html" onclick="logout()">Logout</a></li>
                 </ul>
                 </nav>
@@ -28,36 +28,21 @@
             <div id="description">
                 
             </div>
-            <div class="main-items mainsqueeze">
-                <div class="owner ownerheight">
-                    <div>
-                        <p id="sell-create"></p>
-                    </div>
-                    <h1 class='ownerhead'>SELL A PRODUCT</h1>
-                    <form id="sale-form" method="POST">
-                        <p class="createproduct">
-                            <label>Product name</label><br>
-                            <input id="salename" type="text">
-                        </p>
-                        <p class="createproduct">
-                            <label>Quantity</label><br>
-                            <input id="salequantity" type="text">
-                        </p>
-                        <input id="salebtn" class="createbtn" type="button" onclick="sellProduct()" value="Sell">
-                        <div id="editerror">
-                            <p id="error-sale"></p>
-                        </div>
-                    </form>
-                </div>
+            <h1 id="capt">STOCK</h1>
+            <p id="nullproducts">NO PRODUCTS AT THE MOMENT</p>
+             <div style="overflow-x:auto">
+                <table id="t3">
+                    
+                </table>
             </div>
-            <div class="goback">
-                <p class="gobacktext"><a href="owner.html">Back</a></p>
+            <div class="goback modback">
+                <p class="gobacktext modifyback"><a href="owner.html">Back</a></p>
             </div>
         </div>
         <footer>
             <p>&copy;2018 Store Manager </p>
         </footer>
-        <script src="static/js/sell_product.js"></script>
+        <script src="static/js/stock.js"></script>
         <script src="static/js/logout.js"></script>
     </body>
 </html>
