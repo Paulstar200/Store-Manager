@@ -5,6 +5,10 @@ This application is for use by a store attendant and store owner.
 
 The site is accessed on https://paulstar200.github.io/Store-Manager/UI/index.html
 
+This repo uses the Store Manager API as its backend
+
+[Store Manager API](https://github.com/Paulstar200/Store-Manager-API-V2)
+
 # Features
 1. Store Owner can create a store attendant.
 2. Store Owner can create a product.
@@ -27,6 +31,3 @@ The site is accessed on https://paulstar200.github.io/Store-Manager/UI/index.htm
 
 # Author
 Paul Vitalis Onyango
-
-# Acknowledgement
-Andela Kenya
