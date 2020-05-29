@@ -5,6 +5,10 @@ This application is for use by a store attendant and store owner.
 
 The site is accessed on https://paulstar200.github.io/Store-Manager/UI/index.html
 
+Login credentials:
+`email: vitalispaul48@live.com`
+`password: manu2012`
+
 This repo uses the Store Manager API as its backend
 
 [Store Manager API](https://github.com/Paulstar200/Store-Manager-API-V2)
